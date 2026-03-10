@@ -1,9 +1,9 @@
 .list-box {
   --list-box-item-template-areas: "label" "description";
-  background: var(--sds-color-background-default-default);
+  background: var(--sds-color-background-neutral-default);
   border-radius: var(--sds-size-radius-200);
   box-shadow:
-    0 0 0 var(--sds-size-stroke-border) var(--sds-color-border-default-default),
+    0 0 0 var(--sds-size-stroke-border) var(--sds-color-border-neutral-default),
     var(--sds-effects-shadows-drop-shadow-400);
   display: flex;
   flex-direction: column;
@@ -56,9 +56,9 @@
 }
 
 .list-box-item {
-  --list-box-label-color: var(--sds-color-text-default-default);
-  --list-box-description-color: var(--sds-color-text-default-secondary);
-  --list-box-icon-color: var(--sds-color-icon-default-default);
+  --list-box-label-color: var(--sds-color-text-neutral-default);
+  --list-box-description-color: var(--sds-color-text-neutral-secondary);
+  --list-box-icon-color: var(--sds-color-icon-neutral-default);
 
   align-items: center;
   background-color: transparent;
@@ -98,11 +98,11 @@
   }
 
   &[data-focused] {
-    --list-box-label-color: var(--sds-color-text-brand-on-brand);
-    --list-box-description-color: var(--sds-color-text-brand-on-brand);
-    --list-box-icon-color: var(--sds-color-icon-brand-on-brand);
+    --list-box-label-color: var(--sds-color-text-accent-on-accent);
+    --list-box-description-color: var(--sds-color-text-accent-on-accent);
+    --list-box-icon-color: var(--sds-color-icon-accent-on-accent);
 
-    background-color: var(--sds-color-background-brand-default);
+    background-color: var(--sds-color-background-accent-default);
     outline: none;
   }
 }

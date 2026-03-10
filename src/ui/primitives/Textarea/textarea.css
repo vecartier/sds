@@ -1,8 +1,8 @@
 .text-area {
-  --text-area-background-color: var(--sds-color-background-default-default);
-  --text-area-text-color: var(--sds-color-text-default-default);
-  --text-area-border-color: var(--sds-color-border-default-default);
-  --text-area-placeholder-color: var(--sds-color-text-default-tertiary);
+  --text-area-background-color: var(--sds-color-background-neutral-default);
+  --text-area-text-color: var(--sds-color-text-neutral-default);
+  --text-area-border-color: var(--sds-color-border-neutral-default);
+  --text-area-placeholder-color: var(--sds-color-text-neutral-tertiary);
   align-items: center;
   background-color: var(--text-area-background-color);
   border-radius: var(--sds-size-radius-200);
@@ -30,10 +30,10 @@
   }
 
   &[data-invalid]:not([data-disabled]) {
-    --text-area-border-color: var(--sds-color-border-danger-default);
+    --text-area-border-color: var(--sds-color-border-error-default);
   }
 
   &[data-focus-visible] {
-    --text-area-border-color: var(--sds-color-border-brand-secondary);
+    --text-area-border-color: var(--sds-color-border-accent-secondary);
   }
 }

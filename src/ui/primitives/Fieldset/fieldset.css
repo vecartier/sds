@@ -21,8 +21,8 @@
 }
 
 .field {
-  --field-label-color: var(--sds-color-text-default-default);
-  --field-description-color: var(--sds-color-text-default-secondary);
+  --field-label-color: var(--sds-color-text-neutral-default);
+  --field-description-color: var(--sds-color-text-neutral-secondary);
   --field-row-gap: var(--sds-size-space-200);
 
   display: grid;
@@ -84,6 +84,6 @@
 }
 
 .error-message {
-  color: var(--sds-color-text-danger-default);
+  color: var(--sds-color-text-error-default);
   font: var(--sds-font-body-base);
 }

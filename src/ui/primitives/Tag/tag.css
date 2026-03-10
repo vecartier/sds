@@ -49,70 +49,70 @@
 }
 
 .tag-scheme-brand {
-  --tag-color: var(--sds-color-text-brand-on-brand);
-  --tag-icon: var(--sds-color-icon-brand-on-brand);
-  --tag-background-color: var(--sds-color-background-brand-default);
+  --tag-color: var(--sds-color-text-accent-on-accent);
+  --tag-icon: var(--sds-color-icon-accent-on-accent);
+  --tag-background-color: var(--sds-color-background-accent-default);
 
   &[data-hovered],
   &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-brand-hover);
+    --tag-background-color: var(--sds-color-background-accent-hovered);
   }
 
   &.tag-variant-secondary {
-    --tag-color: var(--sds-color-text-brand-on-brand-tertiary);
-    --tag-icon: var(--sds-color-icon-brand-on-brand-tertiary);
-    --tag-background-color: var(--sds-color-background-brand-tertiary);
+    --tag-color: var(--sds-color-text-accent-on-accent-tertiary);
+    --tag-icon: var(--sds-color-icon-accent-on-accent-tertiary);
+    --tag-background-color: var(--sds-color-background-accent-tertiary);
 
     &[data-hovered],
     &:has(.tag-remove-button[data-hovered]) {
       --tag-background-color: var(
-        --sds-color-background-default-tertiary-hover
+        --sds-color-background-neutral-tertiary-hovered
       );
     }
   }
 }
 .tag-scheme-danger {
-  --tag-color: var(--sds-color-text-danger-on-danger);
-  --tag-icon: var(--sds-color-icon-danger-on-danger);
-  --tag-background-color: var(--sds-color-background-danger-default);
+  --tag-color: var(--sds-color-text-error-on-error);
+  --tag-icon: var(--sds-color-icon-error-on-error);
+  --tag-background-color: var(--sds-color-background-error-default);
 
   &[data-hovered],
   &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-danger-hover);
+    --tag-background-color: var(--sds-color-background-error-hovered);
   }
 
   &.tag-variant-secondary {
-    --tag-color: var(--sds-color-text-danger-on-danger-secondary);
-    --tag-icon: var(--sds-color-icon-danger-on-danger-secondary);
-    --tag-background-color: var(--sds-color-background-danger-secondary);
+    --tag-color: var(--sds-color-text-error-on-error-secondary);
+    --tag-icon: var(--sds-color-icon-error-on-error-secondary);
+    --tag-background-color: var(--sds-color-background-error-secondary);
 
     &[data-hovered],
     &:has(.tag-remove-button[data-hovered]) {
       --tag-background-color: var(
-        --sds-color-background-danger-secondary-hover
+        --sds-color-background-error-secondary-hovered
       );
     }
   }
 }
 .tag-scheme-positive {
-  --tag-color: var(--sds-color-text-positive-on-positive);
-  --tag-icon: var(--sds-color-icon-positive-on-positive);
-  --tag-background-color: var(--sds-color-background-positive-default);
+  --tag-color: var(--sds-color-text-success-on-success);
+  --tag-icon: var(--sds-color-icon-success-on-success);
+  --tag-background-color: var(--sds-color-background-success-default);
 
   &[data-hovered],
   &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-positive-hover);
+    --tag-background-color: var(--sds-color-background-success-hovered);
   }
 
   &.tag-variant-secondary {
-    --tag-color: var(--sds-color-text-positive-on-positive-secondary);
-    --tag-icon: var(--sds-color-icon-positive-on-positive-secondary);
-    --tag-background-color: var(--sds-color-background-positive-secondary);
+    --tag-color: var(--sds-color-text-success-on-success-secondary);
+    --tag-icon: var(--sds-color-icon-success-on-success-secondary);
+    --tag-background-color: var(--sds-color-background-success-secondary);
 
     &[data-hovered],
     &:has(.tag-remove-button[data-hovered]) {
       --tag-background-color: var(
-        --sds-color-background-positive-secondary-hover
+        --sds-color-background-success-secondary-hovered
       );
     }
   }
@@ -124,7 +124,7 @@
 
   &[data-hovered],
   &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-warning-hover);
+    --tag-background-color: var(--sds-color-background-warning-hovered);
   }
 
   &.tag-variant-secondary {
@@ -135,65 +135,65 @@
     &[data-hovered],
     &:has(.tag-remove-button[data-hovered]) {
       --tag-background-color: var(
-        --sds-color-background-warning-secondary-hover
+        --sds-color-background-warning-secondary-hovered
       );
     }
   }
 }
 .tag-scheme-brand {
-  --tag-color: var(--sds-color-text-brand-on-brand);
-  --tag-icon: var(--sds-color-icon-brand-on-brand);
-  --tag-background-color: var(--sds-color-background-brand-default);
+  --tag-color: var(--sds-color-text-accent-on-accent);
+  --tag-icon: var(--sds-color-icon-accent-on-accent);
+  --tag-background-color: var(--sds-color-background-accent-default);
 
   &[data-hovered],
   &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-brand-hover);
+    --tag-background-color: var(--sds-color-background-accent-hovered);
   }
 
   &.tag-variant-secondary {
-    --tag-color: var(--sds-color-text-brand-on-brand-secondary);
-    --tag-icon: var(--sds-color-icon-brand-on-brand-secondary);
-    --tag-background-color: var(--sds-color-background-brand-secondary);
+    --tag-color: var(--sds-color-text-accent-on-accent-secondary);
+    --tag-icon: var(--sds-color-icon-accent-on-accent-secondary);
+    --tag-background-color: var(--sds-color-background-accent-secondary);
 
     &[data-hovered],
     &:has(.tag-remove-button[data-hovered]) {
-      --tag-background-color: var(--sds-color-background-brand-secondary-hover);
+      --tag-background-color: var(--sds-color-background-accent-secondary-hovered);
     }
   }
 }
 .tag-scheme-neutral {
-  --tag-color: var(--sds-color-text-default-default);
-  --tag-icon: var(--sds-color-icon-default-default);
-  --tag-background-color: var(--sds-color-background-default-tertiary);
+  --tag-color: var(--sds-color-text-neutral-default);
+  --tag-icon: var(--sds-color-icon-neutral-default);
+  --tag-background-color: var(--sds-color-background-neutral-tertiary);
 
   &[data-hovered],
   &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-default-tertiary-hover);
+    --tag-background-color: var(--sds-color-background-neutral-tertiary-hovered);
   }
 
   &.tag-variant-secondary {
-    --tag-background-color: var(--sds-color-background-default-secondary);
+    --tag-background-color: var(--sds-color-background-neutral-secondary);
 
     &[data-hovered],
     &:has(.tag-remove-button[data-hovered]) {
       --tag-background-color: var(
-        --sds-color-background-default-secondary-hover
+        --sds-color-background-neutral-secondary-hovered
       );
     }
   }
 }
 
 .tag-toggle {
-  --tag-color: var(--sds-color-text-brand-tertiary);
-  --tag-icon: var(--sds-color-icon-brand-tertiary);
-  --tag-background-color: var(--sds-color-background-brand-tertiary);
+  --tag-color: var(--sds-color-text-accent-tertiary);
+  --tag-icon: var(--sds-color-icon-accent-tertiary);
+  --tag-background-color: var(--sds-color-background-accent-tertiary);
   cursor: pointer;
   gap: var(--sds-size-space-200);
   outline: none;
   &[data-selected] {
-    --tag-color: var(--sds-color-text-brand-on-brand);
-    --tag-icon: var(--sds-color-icon-brand-on-brand);
-    --tag-background-color: var(--sds-color-background-brand-default);
+    --tag-color: var(--sds-color-text-accent-on-accent);
+    --tag-icon: var(--sds-color-icon-accent-on-accent);
+    --tag-background-color: var(--sds-color-background-accent-default);
   }
 }
 

@@ -36,9 +36,9 @@
   }
 
   > svg {
-    background: var(--sds-color-background-brand-default);
+    background: var(--sds-color-background-accent-default);
     > text {
-      fill: var(--sds-color-text-brand-on-brand);
+      fill: var(--sds-color-text-accent-on-accent);
       font-size: var(--sds-typography-scale-07);
     }
   }
@@ -46,7 +46,7 @@
 
 .avatar-block {
   align-items: start;
-  color: var(--sds-color-text-default-secondary);
+  color: var(--sds-color-text-neutral-secondary);
   display: grid;
   grid-template-areas: "avatar title";
   grid-template-columns: auto 1fr;
@@ -97,9 +97,9 @@
   }
   > .avatar-group-overflow {
     align-items: center;
-    background: var(--sds-color-background-default-secondary);
+    background: var(--sds-color-background-neutral-secondary);
     border-radius: var(--sds-size-radius-200);
-    color: var(--sds-color-text-default-secondary);
+    color: var(--sds-color-text-neutral-secondary);
     display: flex;
     justify-content: center;
     font: var(--sds-font-body-small);

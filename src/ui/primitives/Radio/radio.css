@@ -1,7 +1,7 @@
 .radio {
-  --radio-background: var(--sds-color-background-default-default);
-  --radio-border: var(--sds-color-border-default-default);
-  --radio-icon: var(--sds-color-icon-brand-on-brand);
+  --radio-background: var(--sds-color-background-neutral-default);
+  --radio-border: var(--sds-color-border-neutral-default);
+  --radio-icon: var(--sds-color-icon-accent-on-accent);
   --radio-border-radius: var(--sds-size-space-400);
   background: var(--radio-background);
   box-shadow: inset 0 0 0 var(--sds-size-stroke-border) var(--radio-border);
@@ -24,7 +24,7 @@
 }
 
 .radio-field[data-selected] .radio {
-  --radio-background: var(--sds-color-background-brand-default);
+  --radio-background: var(--sds-color-background-accent-default);
   --radio-border: var(--radio-background);
   > .radio-check {
     display: block;
@@ -50,8 +50,8 @@
 }
 
 .radio-field {
-  --radio-field-label-color: var(--sds-color-text-default-default);
-  --radio-field-description-color: var(--sds-color-text-default-secondary);
+  --radio-field-label-color: var(--sds-color-text-neutral-default);
+  --radio-field-description-color: var(--sds-color-text-neutral-secondary);
 
   align-items: center;
   column-gap: var(--sds-size-space-400);

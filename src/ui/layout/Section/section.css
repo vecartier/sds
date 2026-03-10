@@ -59,27 +59,27 @@
   }
 }
 .section-variant-brand {
-  background: var(--sds-color-background-brand-default);
-  color: var(--sds-color-text-brand-on-brand);
+  background: var(--sds-color-background-accent-default);
+  color: var(--sds-color-text-accent-on-accent);
   .logo svg {
-    --logo-color: var(--sds-color-icon-brand-on-brand);
+    --logo-color: var(--sds-color-icon-accent-on-accent);
   }
   .icon svg {
-    --icon-color: var(--sds-color-icon-brand-on-brand);
+    --icon-color: var(--sds-color-icon-accent-on-accent);
   }
 }
 
 .section-variant-neutral {
-  background: var(--sds-color-background-default-tertiary);
+  background: var(--sds-color-background-neutral-tertiary);
 }
 .section-variant-stroke {
   &:not(:last-child) {
     border-bottom: var(--sds-size-stroke-border) solid
-      var(--sds-color-border-default-default);
+      var(--sds-color-border-neutral-default);
   }
   &:not(:first-child) {
     border-top: var(--sds-size-stroke-border) solid
-      var(--sds-color-border-default-default);
+      var(--sds-color-border-neutral-default);
   }
   & + .section-variant-stroke {
     border-top: none;

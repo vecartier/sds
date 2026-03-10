@@ -1,8 +1,8 @@
 .input {
-  --input-background-color: var(--sds-color-background-default-default);
-  --input-text-color: var(--sds-color-text-default-default);
-  --input-border-color: var(--sds-color-border-default-default);
-  --input-placeholder-color: var(--sds-color-text-default-tertiary);
+  --input-background-color: var(--sds-color-background-neutral-default);
+  --input-text-color: var(--sds-color-text-neutral-default);
+  --input-border-color: var(--sds-color-border-neutral-default);
+  --input-placeholder-color: var(--sds-color-text-neutral-tertiary);
   align-items: center;
   background-color: var(--input-background-color);
   box-shadow: inset 0 0 0 var(--sds-size-stroke-border)
@@ -27,10 +27,10 @@
   }
 
   &[data-invalid]:not([data-disabled]) {
-    --input-border-color: var(--sds-color-border-danger-default);
+    --input-border-color: var(--sds-color-border-error-default);
   }
 
   &[data-focus-visible] {
-    --input-border-color: var(--sds-color-border-brand-secondary);
+    --input-border-color: var(--sds-color-border-accent-secondary);
   }
 }

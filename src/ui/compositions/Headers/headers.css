@@ -1,5 +1,5 @@
 .header {
-  background: var(--sds-color-background-default-default);
+  background: var(--sds-color-background-neutral-default);
   left: 0;
   position: sticky;
   top: 0;
@@ -17,7 +17,7 @@
   position: relative;
 
   &[data-hovered] {
-    background-color: var(--sds-color-background-default-default-hover);
+    background-color: var(--sds-color-background-neutral-hovered);
   }
 
   &[data-focus-visible] {
@@ -37,7 +37,7 @@
   }
 
   > .logo {
-    --icon-color: var(--sds-color-icon-default-default);
+    --icon-color: var(--sds-color-icon-neutral-default);
   }
 }
 

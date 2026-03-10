@@ -6,7 +6,7 @@
 }
 
 .image-placeholder {
-  background: var(--sds-color-background-default-secondary);
+  background: var(--sds-color-background-neutral-secondary);
   display: block;
   width: 100%;
 }

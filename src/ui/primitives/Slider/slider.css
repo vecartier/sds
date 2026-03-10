@@ -1,7 +1,7 @@
 .slider-field {
-  --slider-thumb-background-color: var(--sds-color-background-brand-default);
-  --slider-thumb-border-color: var(--sds-color-background-brand-default);
-  --slider-track-background-color: var(--sds-color-background-brand-secondary);
+  --slider-thumb-background-color: var(--sds-color-background-accent-default);
+  --slider-thumb-border-color: var(--sds-color-background-accent-default);
+  --slider-track-background-color: var(--sds-color-background-accent-secondary);
   font: var(--sds-font-body-base);
 
   &[data-disabled] {

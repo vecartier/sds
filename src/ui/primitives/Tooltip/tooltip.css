@@ -17,14 +17,14 @@
     height: calc(0.5 * var(--sds-typography-scale-04));
     width: var(--width);
     &:first-child {
-      fill: var(--sds-color-border-default-default);
+      fill: var(--sds-color-border-neutral-default);
       left: 0;
       position: absolute;
       transform: translate(var(--offset-x), var(--offset-y))
         rotate(var(--rotation));
     }
     &:last-child {
-      fill: var(--sds-color-background-default-default);
+      fill: var(--sds-color-background-neutral-default);
       transform: translate(
           calc(var(--offset-x) + var(--offset-border-x)),
           calc(var(--offset-y) + var(--offset-border-y))

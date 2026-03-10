@@ -45,14 +45,14 @@
 }
 
 .notification-variant-message {
-  --notification-color: var(--sds-color-text-default-default);
-  --notification-icon: var(--sds-color-icon-default-default);
-  --notification-border-color: var(--sds-color-border-default-default);
-  --notification-background-color: var(--sds-color-background-default-default);
+  --notification-color: var(--sds-color-text-neutral-default);
+  --notification-icon: var(--sds-color-icon-neutral-default);
+  --notification-border-color: var(--sds-color-border-neutral-default);
+  --notification-background-color: var(--sds-color-background-neutral-default);
 }
 .notification-variant-alert {
-  --notification-color: var(--sds-color-text-danger-on-danger-tertiary);
-  --notification-icon: var(--sds-color-icon-danger-on-danger-tertiary);
-  --notification-border-color: var(--sds-color-border-danger-default);
-  --notification-background-color: var(--sds-color-background-danger-tertiary);
+  --notification-color: var(--sds-color-text-error-on-error-tertiary);
+  --notification-icon: var(--sds-color-icon-error-on-error-tertiary);
+  --notification-border-color: var(--sds-color-border-error-default);
+  --notification-background-color: var(--sds-color-background-error-tertiary);
 }

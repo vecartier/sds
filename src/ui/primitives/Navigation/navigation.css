@@ -23,18 +23,18 @@
   --border-radius: var(--sds-size-radius-200);
   background: transparent;
   border-radius: var(--border-radius);
-  color: var(--sds-color-text-default-default);
+  color: var(--sds-color-text-neutral-default);
   cursor: pointer;
   padding: var(--sds-size-space-200);
   position: relative;
 
   &[data-hovered] {
-    background: var(--sds-color-background-default-default-hover);
+    background: var(--sds-color-background-neutral-hovered);
   }
 
   &[data-selected] {
-    color: var(--sds-color-text-brand-on-brand-secondary);
-    background: var(--sds-color-background-brand-tertiary);
+    color: var(--sds-color-text-accent-on-accent-secondary);
+    background: var(--sds-color-background-accent-tertiary);
   }
 
   &[data-focus-visible] {
@@ -59,7 +59,7 @@
   align-items: center;
   background: transparent;
   border-radius: var(--border-radius);
-  color: var(--sds-color-text-default-secondary);
+  color: var(--sds-color-text-neutral-secondary);
   cursor: pointer;
   display: flex;
   gap: var(--sds-size-space-200);
@@ -68,19 +68,19 @@
   position: relative;
 
   > .icon {
-    --icon-color: var(--sds-color-icon-default-secondary);
+    --icon-color: var(--sds-color-icon-neutral-secondary);
   }
 
   &[data-selected] {
-    color: var(--sds-color-text-brand-default);
+    color: var(--sds-color-text-accent-default);
 
     > .icon {
-      --icon-color: var(--sds-color-icon-brand-default);
+      --icon-color: var(--sds-color-icon-accent-default);
     }
   }
 
   &[data-hovered] {
-    background: var(--sds-color-background-default-default-hover);
+    background: var(--sds-color-background-neutral-hovered);
   }
 
   &[data-focus-visible] {

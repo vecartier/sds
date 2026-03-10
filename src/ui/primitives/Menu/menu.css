@@ -3,11 +3,11 @@
   --menu-anchor-offset: var(--sds-size-space-300);
   --menu-anchor-padding: var(--sds-size-space-300);
 
-  background: var(--sds-color-background-default-default);
+  background: var(--sds-color-background-neutral-default);
   border-radius: var(--sds-size-radius-200);
   box-shadow:
     inset 0 0 0 var(--sds-size-stroke-border)
-      var(--sds-color-border-default-default),
+      var(--sds-color-border-neutral-default),
     var(--sds-effects-shadows-drop-shadow-400);
   outline: none;
   overflow-y: auto;
@@ -22,13 +22,13 @@
   width: 100%;
 }
 .menu-heading {
-  color: var(--sds-color-text-default-secondary);
+  color: var(--sds-color-text-neutral-secondary);
   font: var(--sds-font-body-strong);
   padding: var(--sds-size-space-200) var(--sds-size-space-400)
     var(--sds-size-space-100);
 }
 .menu-separator {
-  background-color: var(--sds-color-border-default-default);
+  background-color: var(--sds-color-border-neutral-default);
   display: block;
   height: var(--sds-size-stroke-border);
   margin: var(--sds-size-space-100) var(--sds-size-space-400);
@@ -41,9 +41,9 @@
   --menu-description-column-start: 1;
   --menu-description-column-span: 3;
   --menu-item-background-color: transparent;
-  --menu-item-icon-color: var(--sds-color-icon-default-default);
-  --menu-item-label-color: var(--sds-color-text-default-default);
-  --menu-item-description-color: var(--sds-color-text-default-secondary);
+  --menu-item-icon-color: var(--sds-color-icon-neutral-default);
+  --menu-item-label-color: var(--sds-color-text-neutral-default);
+  --menu-item-description-color: var(--sds-color-text-neutral-secondary);
   background-color: var(--menu-item-background-color);
   border-radius: var(--sds-size-radius-200);
   color: var(--menu-item-label-color);
@@ -62,10 +62,10 @@
 
   &[data-focused],
   &[data-hovered]:not([data-disabled]) {
-    --menu-item-icon-color: var(--sds-color-icon-brand-on-brand);
-    --menu-item-label-color: var(--sds-color-text-brand-on-brand);
-    --menu-item-description-color: var(--sds-color-text-brand-on-brand);
-    --menu-item-background-color: var(--sds-color-background-brand-default);
+    --menu-item-icon-color: var(--sds-color-icon-accent-on-accent);
+    --menu-item-label-color: var(--sds-color-text-accent-on-accent);
+    --menu-item-description-color: var(--sds-color-text-accent-on-accent);
+    --menu-item-background-color: var(--sds-color-background-accent-default);
   }
 
   &[data-disabled] {

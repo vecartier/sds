@@ -19,7 +19,7 @@
     }
   }
   > svg {
-    --logo-color: var(--sds-color-icon-default-default);
+    --logo-color: var(--sds-color-icon-neutral-default);
     height: auto;
     width: var(--sds-size-icon-small);
   }

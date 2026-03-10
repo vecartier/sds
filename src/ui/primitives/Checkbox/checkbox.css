@@ -1,7 +1,7 @@
 .checkbox {
-  --checkbox-background: var(--sds-color-background-default-default);
-  --checkbox-border: var(--sds-color-border-default-default);
-  --checkbox-icon: var(--sds-color-icon-brand-on-brand);
+  --checkbox-background: var(--sds-color-background-neutral-default);
+  --checkbox-border: var(--sds-color-border-neutral-default);
+  --checkbox-icon: var(--sds-color-icon-accent-on-accent);
   --checkbox-border-radius: var(--sds-size-radius-100);
   align-items: center;
   background: var(--checkbox-background);
@@ -29,7 +29,7 @@
 
 .checkbox[data-selected],
 .checkbox-field[data-selected] > .checkbox {
-  --checkbox-background: var(--sds-color-background-brand-default);
+  --checkbox-background: var(--sds-color-background-accent-default);
   --checkbox-border: var(--checkbox-background);
 }
 
@@ -70,8 +70,8 @@
 }
 
 .checkbox-field {
-  --checkbox-field-label-color: var(--sds-color-text-default-default);
-  --checkbox-field-description-color: var(--sds-color-text-default-secondary);
+  --checkbox-field-label-color: var(--sds-color-text-neutral-default);
+  --checkbox-field-description-color: var(--sds-color-text-neutral-secondary);
 
   align-items: center;
   column-gap: var(--sds-size-space-400);

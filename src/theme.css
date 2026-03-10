@@ -14,16 +14,16 @@
   --sds-color-black-700: #000000d9;
   --sds-color-black-800: #000000e5;
   --sds-color-black-900: #000000f2;
-  --sds-color-brand-100: #F3E5FF;
-  --sds-color-brand-1000: #350060;
-  --sds-color-brand-200: #E8D4FF;
-  --sds-color-brand-300: #DBBEFF;
-  --sds-color-brand-400: #CA97FF;
-  --sds-color-brand-500: #BB73FF;
-  --sds-color-brand-600: #AD47FF;
-  --sds-color-brand-700: #A238FF;
-  --sds-color-brand-800: #8A22DE;
-  --sds-color-brand-900: #6908AE;
+  --sds-color-purple-100: #F3E5FF;
+  --sds-color-purple-1000: #350060;
+  --sds-color-purple-200: #E8D4FF;
+  --sds-color-purple-300: #DBBEFF;
+  --sds-color-purple-400: #CA97FF;
+  --sds-color-purple-500: #BB73FF;
+  --sds-color-purple-600: #AD47FF;
+  --sds-color-purple-700: #A238FF;
+  --sds-color-purple-800: #8A22DE;
+  --sds-color-purple-900: #6908AE;
   --sds-color-gray-100: #F5F2F8;
   --sds-color-gray-1000: #000000;
   --sds-color-gray-200: #E2DFE6;
@@ -95,284 +95,661 @@
   --sds-color-yellow-800: #804800;
   --sds-color-yellow-900: #4D2B00;
 }
-/* color: sds_light (default) — mapped to Deezer Tempo Light */
+/* brand_palette: Deezer Tempo brand colors (from Figma ground truth) */
 :root {
-  --sds-color-background-brand-default: var(--sds-color-brand-700);
-  --sds-color-background-brand-hover: var(--sds-color-brand-800);
-  --sds-color-background-brand-secondary: var(--sds-color-brand-100);
-  --sds-color-background-brand-secondary-hover: var(--sds-color-brand-200);
-  --sds-color-background-brand-tertiary: var(--sds-color-brand-100);
-  --sds-color-background-brand-tertiary-hover: var(--sds-color-brand-200);
-  --sds-color-background-danger-default: var(--sds-color-red-600);
-  --sds-color-background-danger-hover: var(--sds-color-red-700);
-  --sds-color-background-danger-secondary: var(--sds-color-red-200);
-  --sds-color-background-danger-secondary-hover: var(--sds-color-red-300);
-  --sds-color-background-danger-tertiary: var(--sds-color-red-100);
-  --sds-color-background-danger-tertiary-hover: var(--sds-color-red-200);
-  --sds-color-background-default-default: var(--sds-color-white-1000);
-  --sds-color-background-default-default-hover: var(--sds-color-gray-100);
-  --sds-color-background-default-secondary: var(--sds-color-gray-100);
-  --sds-color-background-default-secondary-hover: var(--sds-color-gray-200);
-  --sds-color-background-default-tertiary: var(--sds-color-gray-200);
-  --sds-color-background-default-tertiary-hover: var(--sds-color-gray-300);
-  --sds-color-background-disabled-default: var(--sds-color-gray-300);
-  --sds-color-background-neutral-default: var(--sds-color-gray-1000);
-  --sds-color-background-neutral-hover: var(--sds-color-gray-900);
-  --sds-color-background-neutral-secondary: var(--sds-color-slate-300);
-  --sds-color-background-neutral-secondary-hover: var(--sds-color-slate-400);
-  --sds-color-background-neutral-tertiary: var(--sds-color-slate-200);
-  --sds-color-background-neutral-tertiary-hover: var(--sds-color-slate-300);
-  --sds-color-background-positive-default: var(--sds-color-green-600);
-  --sds-color-background-positive-hover: var(--sds-color-green-700);
-  --sds-color-background-positive-secondary: var(--sds-color-green-200);
-  --sds-color-background-positive-secondary-hover: var(--sds-color-green-300);
-  --sds-color-background-positive-tertiary: var(--sds-color-green-100);
-  --sds-color-background-positive-tertiary-hover: var(--sds-color-green-200);
+  --sds-color-brand-black: #000000;
+  --sds-color-brand-white: #ffffff;
+  --sds-color-brand-acid-deep: #525100;
+  --sds-color-brand-acid-dark: #9a9a00;
+  --sds-color-brand-acid-default: #e6e951;
+  --sds-color-brand-acid-light: #f1f4af;
+  --sds-color-brand-acid-pale: #f9fbe0;
+  --sds-color-brand-flame-deep: #8c712d;
+  --sds-color-brand-flame-dark: #b6933b;
+  --sds-color-brand-flame-default: #ffd25f;
+  --sds-color-brand-flame-light: #ffe6a6;
+  --sds-color-brand-flame-pale: #fff7e1;
+  --sds-color-brand-orange-deep: #8e2200;
+  --sds-color-brand-orange-dark: #b43306;
+  --sds-color-brand-orange-default: #f65e34;
+  --sds-color-brand-orange-light: #ffc2ad;
+  --sds-color-brand-orange-pale: #ffdfd3;
+  --sds-color-brand-lava-deep: #940000;
+  --sds-color-brand-lava-dark: #be0000;
+  --sds-color-brand-lava-default: #ff3d3d;
+  --sds-color-brand-lava-light: #ffb4aa;
+  --sds-color-brand-lava-pale: #ffd5ce;
+  --sds-color-brand-pink-deep: #682044;
+  --sds-color-brand-pink-dark: #932e60;
+  --sds-color-brand-pink-default: #ca3e84;
+  --sds-color-brand-pink-light: #f3aace;
+  --sds-color-brand-pink-pale: #f8cbe1;
+  --sds-color-brand-magenta-deep: #891c91;
+  --sds-color-brand-magenta-dark: #b030ba;
+  --sds-color-brand-magenta-default: #d451dd;
+  --sds-color-brand-magenta-light: #ffbeff;
+  --sds-color-brand-magenta-pale: #ffd7ff;
+  --sds-color-brand-purple-deep: #6307a4;
+  --sds-color-brand-purple-dark: #7c1bc8;
+  --sds-color-brand-purple-default: #a238ff;
+  --sds-color-brand-purple-light: #d9abff;
+  --sds-color-brand-purple-pale: #ebceff;
+  --sds-color-brand-indigo-deep: #3a298e;
+  --sds-color-brand-indigo-dark: #523ac9;
+  --sds-color-brand-indigo-default: #7357ff;
+  --sds-color-brand-indigo-light: #c3b6ff;
+  --sds-color-brand-indigo-pale: #d9d2ff;
+  --sds-color-brand-blue-deep: #1d15bc;
+  --sds-color-brand-blue-dark: #292fe6;
+  --sds-color-brand-blue-default: #3448fc;
+  --sds-color-brand-blue-light: #a0beff;
+  --sds-color-brand-blue-pale: #c2d6ff;
+  --sds-color-brand-jellyfish-deep: #145f54;
+  --sds-color-brand-jellyfish-dark: #24aa96;
+  --sds-color-brand-jellyfish-default: #2ed6bd;
+  --sds-color-brand-jellyfish-light: #76ead9;
+  --sds-color-brand-jellyfish-pale: #b5f4eb;
+  --sds-color-brand-teal-deep: #125e6e;
+  --sds-color-brand-teal-dark: #33808f;
+  --sds-color-brand-teal-default: #7ccec9;
+  --sds-color-brand-teal-light: #96f9f3;
+  --sds-color-brand-teal-pale: #defdfb;
+  --sds-color-brand-algae-deep: #305f38;
+  --sds-color-brand-algae-dark: #55a964;
+  --sds-color-brand-algae-default: #6bd57e;
+  --sds-color-brand-algae-light: #8eec9f;
+  --sds-color-brand-algae-pale: #c1f4ca;
+}
+/* semantic_colors: light (default) — Deezer Tempo Light */
+:root {
+  /* --- Background / Neutral --- */
+  --sds-color-background-neutral-default: #FFFFFF;
+  --sds-color-background-neutral-hovered: #F5F2F8;
+  --sds-color-background-neutral-pressed: #E2DFE6;
+  --sds-color-background-neutral-selected: #F9E8FF;
+  --sds-color-background-neutral-disabled: #E2DFE6;
+  --sds-color-background-neutral-secondary: #F5F2F8;
+  --sds-color-background-neutral-secondary-hovered: #E2DFE6;
+  --sds-color-background-neutral-secondary-pressed: #D5D2D8;
+  --sds-color-background-neutral-secondary-selected: #F9E8FF;
+  --sds-color-background-neutral-secondary-disabled: #E2DFE6;
+  --sds-color-background-neutral-tertiary: #E2DFE6;
+  --sds-color-background-neutral-tertiary-hovered: #D5D2D8;
+  --sds-color-background-neutral-tertiary-pressed: #C7C5CB;
+  --sds-color-background-neutral-tertiary-selected: #F9E8FF;
+  --sds-color-background-neutral-tertiary-disabled: #D5D2D8;
+
+  /* --- Background / Inverse --- */
+  --sds-color-background-inverse-default: #000000;
+  --sds-color-background-inverse-hovered: #141216;
+  --sds-color-background-inverse-pressed: #242326;
+  --sds-color-background-inverse-selected: #350060;
+  --sds-color-background-inverse-disabled: #242326;
+  --sds-color-background-inverse-secondary: #D5D2D8;
+  --sds-color-background-inverse-secondary-hovered: #C7C5CB;
+  --sds-color-background-inverse-tertiary: #E2DFE6;
+  --sds-color-background-inverse-tertiary-hovered: #D5D2D8;
+
+  /* --- Background / Accent --- */
+  --sds-color-background-accent-default: #A238FF;
+  --sds-color-background-accent-hovered: #8A22DE;
+  --sds-color-background-accent-pressed: #6908AE;
+  --sds-color-background-accent-disabled: #D5D2D8;
+  --sds-color-background-accent-secondary: #F3E5FF;
+  --sds-color-background-accent-secondary-hovered: #E8D4FF;
+  --sds-color-background-accent-secondary-pressed: #DBBEFF;
+  --sds-color-background-accent-secondary-disabled: #D5D2D8;
+  --sds-color-background-accent-tertiary: #F3E5FF;
+  --sds-color-background-accent-tertiary-hovered: #E8D4FF;
+
+  /* --- Background / Accent OnContent --- */
+  --sds-color-background-accent-on-content-default: #00000066;
+  --sds-color-background-accent-on-content-hovered: #0000008F;
+  --sds-color-background-accent-on-content-pressed: #000000A3;
+  --sds-color-background-accent-on-content-disabled: #00000029;
+
+  /* --- Background / Accent OnDark --- */
+  --sds-color-background-accent-on-dark-default: #FFFFFF;
+  --sds-color-background-accent-on-dark-hovered: #F5F2F8;
+  --sds-color-background-accent-on-dark-pressed: #E2DFE6;
+  --sds-color-background-accent-on-dark-selected: #F9E8FF;
+  --sds-color-background-accent-on-dark-disabled: #E2DFE6;
+
+  /* --- Background / Accent OnLight --- */
+  --sds-color-background-accent-on-light-default: #000000;
+  --sds-color-background-accent-on-light-hovered: #141216;
+  --sds-color-background-accent-on-light-pressed: #242326;
+  --sds-color-background-accent-on-light-selected: #350060;
+  --sds-color-background-accent-on-light-disabled: #242326;
+
+  /* --- Background / Feedback --- */
+  --sds-color-background-success-default: #00b23d;
+  --sds-color-background-success-hovered: #388e3c;
+  --sds-color-background-success-pressed: #388e3c;
+  --sds-color-background-success-disabled: #D5D2D8;
+  --sds-color-background-success-secondary: #B3F5D5;
+  --sds-color-background-success-secondary-hovered: #86E19D;
+  --sds-color-background-success-tertiary: #E5FFED;
+  --sds-color-background-success-tertiary-hovered: #B3F5D5;
+  --sds-color-background-error-default: #f44336;
+  --sds-color-background-error-hovered: #e53935;
+  --sds-color-background-error-pressed: #d32f2f;
+  --sds-color-background-error-disabled: #D5D2D8;
+  --sds-color-background-error-secondary: #FFB3B3;
+  --sds-color-background-error-secondary-hovered: #FF9494;
+  --sds-color-background-error-tertiary: #FFE5E5;
+  --sds-color-background-error-tertiary-hovered: #FFB3B3;
+  --sds-color-background-warning-default: #fe9935;
+  --sds-color-background-warning-hovered: #da7726;
+  --sds-color-background-warning-pressed: #b6581a;
+  --sds-color-background-warning-disabled: #D5D2D8;
+  --sds-color-background-warning-secondary: #FFE699;
+  --sds-color-background-warning-secondary-hovered: #FFCC66;
+  --sds-color-background-warning-tertiary: #FFF5CC;
+  --sds-color-background-warning-tertiary-hovered: #FFE699;
+
+  /* --- Background / Disabled --- */
+  --sds-color-background-disabled-default: #D5D2D8;
+
+  /* --- Background / Utilities --- */
   --sds-color-background-utilities-blanket: #000000b2;
-  --sds-color-background-utilities-measurement: var(--sds-color-pink-200);
+  --sds-color-background-utilities-measurement: #FFB3E0;
   --sds-color-background-utilities-overlay: #00000066;
   --sds-color-background-utilities-scrim: #ffffffcc;
-  --sds-color-background-warning-default: var(--sds-color-yellow-500);
-  --sds-color-background-warning-hover: var(--sds-color-yellow-600);
-  --sds-color-background-warning-secondary: var(--sds-color-yellow-200);
-  --sds-color-background-warning-secondary-hover: var(--sds-color-yellow-300);
-  --sds-color-background-warning-tertiary: var(--sds-color-yellow-100);
-  --sds-color-background-warning-tertiary-hover: var(--sds-color-yellow-200);
-  --sds-color-border-brand-default: var(--sds-color-brand-700);
-  --sds-color-border-brand-secondary: var(--sds-color-brand-600);
-  --sds-color-border-brand-tertiary: var(--sds-color-brand-500);
-  --sds-color-border-danger-default: var(--sds-color-red-600);
-  --sds-color-border-danger-secondary: var(--sds-color-red-500);
-  --sds-color-border-danger-tertiary: var(--sds-color-red-400);
-  --sds-color-border-default-default: var(--sds-color-gray-400);
-  --sds-color-border-default-secondary: var(--sds-color-gray-500);
-  --sds-color-border-default-tertiary: var(--sds-color-gray-600);
-  --sds-color-border-disabled-default: var(--sds-color-gray-300);
-  --sds-color-border-neutral-default: var(--sds-color-slate-800);
-  --sds-color-border-neutral-secondary: var(--sds-color-slate-600);
-  --sds-color-border-neutral-tertiary: var(--sds-color-slate-400);
-  --sds-color-border-positive-default: var(--sds-color-green-600);
-  --sds-color-border-positive-secondary: var(--sds-color-green-500);
-  --sds-color-border-positive-tertiary: var(--sds-color-green-400);
-  --sds-color-border-utilities-measurement: var(--sds-color-pink-400);
+
+  /* --- Border / Neutral --- */
+  --sds-color-border-neutral-default: #C7C5CB;
+  --sds-color-border-neutral-hovered: #BAB8BE;
+  --sds-color-border-neutral-pressed: #A19FA4;
+  --sds-color-border-neutral-focused: #A238FF;
+  --sds-color-border-neutral-disabled: #D5D2D8;
+  --sds-color-border-neutral-secondary: #A19FA4;
+  --sds-color-border-neutral-tertiary: #8A888C;
+
+  /* --- Border / Accent --- */
+  --sds-color-border-accent-default: #A238FF;
+  --sds-color-border-accent-focused: #141216;
+  --sds-color-border-accent-secondary: #A238FF;
+  --sds-color-border-accent-tertiary: #BB73FF;
+
+  /* --- Border / Accent OnContent --- */
+  --sds-color-border-accent-on-content-default: #FFFFFF;
+  --sds-color-border-accent-on-content-hovered: #F5F2F8;
+  --sds-color-border-accent-on-content-pressed: #E2DFE6;
+  --sds-color-border-accent-on-content-focused: #A238FF;
+  --sds-color-border-accent-on-content-disabled: #7C7A7F;
+
+  /* --- Border / Feedback --- */
+  --sds-color-border-success-default: #1B8C3D;
+  --sds-color-border-success-secondary: #157030;
+  --sds-color-border-success-tertiary: #105825;
+  --sds-color-border-error-default: #D92C2C;
+  --sds-color-border-error-secondary: #BE2424;
+  --sds-color-border-error-tertiary: #A31C1C;
+  --sds-color-border-warning-default: #B36600;
+  --sds-color-border-warning-secondary: #995700;
+  --sds-color-border-warning-tertiary: #804800;
+
+  /* --- Border / Disabled + Utilities --- */
+  --sds-color-border-disabled-default: #D5D2D8;
+  --sds-color-border-utilities-measurement: #FF4DB8;
   --sds-color-border-utilities-swatch: #0000003d;
-  --sds-color-border-warning-default: var(--sds-color-yellow-800);
-  --sds-color-border-warning-secondary: var(--sds-color-yellow-700);
-  --sds-color-border-warning-tertiary: var(--sds-color-yellow-600);
-  --sds-color-icon-brand-default: var(--sds-color-brand-800);
-  --sds-color-icon-brand-on-brand: var(--sds-color-white-1000);
-  --sds-color-icon-brand-on-brand-secondary: var(--sds-color-brand-200);
-  --sds-color-icon-brand-on-brand-tertiary: var(--sds-color-brand-300);
-  --sds-color-icon-brand-secondary: var(--sds-color-brand-600);
-  --sds-color-icon-brand-tertiary: var(--sds-color-brand-500);
-  --sds-color-icon-danger-default: var(--sds-color-red-600);
-  --sds-color-icon-danger-on-danger: var(--sds-color-white-1000);
-  --sds-color-icon-danger-on-danger-secondary: var(--sds-color-red-200);
-  --sds-color-icon-danger-on-danger-tertiary: var(--sds-color-red-300);
-  --sds-color-icon-danger-secondary: var(--sds-color-red-500);
-  --sds-color-icon-danger-tertiary: var(--sds-color-red-400);
-  --sds-color-icon-default-default: var(--sds-color-gray-1000);
-  --sds-color-icon-default-secondary: var(--sds-color-gray-500);
-  --sds-color-icon-default-tertiary: var(--sds-color-gray-400);
-  --sds-color-icon-disabled-default: var(--sds-color-gray-400);
-  --sds-color-icon-disabled-on-disabled: var(--sds-color-gray-400);
-  --sds-color-icon-neutral-default: var(--sds-color-gray-1000);
-  --sds-color-icon-neutral-on-neutral: var(--sds-color-white-1000);
-  --sds-color-icon-neutral-on-neutral-secondary: var(--sds-color-slate-200);
-  --sds-color-icon-neutral-on-neutral-tertiary: var(--sds-color-slate-300);
-  --sds-color-icon-neutral-secondary: var(--sds-color-slate-600);
-  --sds-color-icon-neutral-tertiary: var(--sds-color-slate-500);
-  --sds-color-icon-positive-default: var(--sds-color-green-600);
-  --sds-color-icon-positive-on-positive: var(--sds-color-white-1000);
-  --sds-color-icon-positive-on-positive-secondary: var(--sds-color-green-200);
-  --sds-color-icon-positive-on-positive-tertiary: var(--sds-color-green-300);
-  --sds-color-icon-positive-secondary: var(--sds-color-green-500);
-  --sds-color-icon-positive-tertiary: var(--sds-color-green-400);
-  --sds-color-icon-utilities-icon: var(--sds-color-pink-600);
-  --sds-color-icon-utilities-icon-on-measurement: var(--sds-color-pink-800);
-  --sds-color-icon-warning-default: var(--sds-color-yellow-700);
-  --sds-color-icon-warning-on-warning: var(--sds-color-yellow-1000);
-  --sds-color-icon-warning-on-warning-secondary: var(--sds-color-yellow-200);
-  --sds-color-icon-warning-on-warning-tertiary: var(--sds-color-yellow-300);
-  --sds-color-icon-warning-secondary: var(--sds-color-yellow-600);
-  --sds-color-icon-warning-tertiary: var(--sds-color-yellow-500);
-  --sds-color-text-brand-default: var(--sds-color-brand-800);
-  --sds-color-text-brand-on-brand: var(--sds-color-white-1000);
-  --sds-color-text-brand-on-brand-secondary: var(--sds-color-brand-200);
-  --sds-color-text-brand-on-brand-tertiary: var(--sds-color-brand-300);
-  --sds-color-text-brand-secondary: var(--sds-color-brand-600);
-  --sds-color-text-brand-tertiary: var(--sds-color-brand-500);
-  --sds-color-text-danger-default: var(--sds-color-red-600);
-  --sds-color-text-danger-on-danger: var(--sds-color-white-1000);
-  --sds-color-text-danger-on-danger-secondary: var(--sds-color-red-200);
-  --sds-color-text-danger-on-danger-tertiary: var(--sds-color-red-300);
-  --sds-color-text-danger-secondary: var(--sds-color-red-500);
-  --sds-color-text-danger-tertiary: var(--sds-color-red-400);
-  --sds-color-text-default-default: var(--sds-color-gray-1000);
-  --sds-color-text-default-secondary: var(--sds-color-gray-500);
-  --sds-color-text-default-tertiary: var(--sds-color-gray-400);
-  --sds-color-text-disabled-default: var(--sds-color-gray-400);
-  --sds-color-text-disabled-on-disabled: var(--sds-color-gray-400);
-  --sds-color-text-neutral-default: var(--sds-color-gray-1000);
-  --sds-color-text-neutral-on-neutral: var(--sds-color-white-1000);
-  --sds-color-text-neutral-on-neutral-secondary: var(--sds-color-slate-200);
-  --sds-color-text-neutral-on-neutral-tertiary: var(--sds-color-slate-300);
-  --sds-color-text-neutral-secondary: var(--sds-color-slate-600);
-  --sds-color-text-neutral-tertiary: var(--sds-color-slate-500);
-  --sds-color-text-positive-default: var(--sds-color-green-600);
-  --sds-color-text-positive-on-positive: var(--sds-color-white-1000);
-  --sds-color-text-positive-on-positive-secondary: var(--sds-color-green-200);
-  --sds-color-text-positive-on-positive-tertiary: var(--sds-color-green-300);
-  --sds-color-text-positive-secondary: var(--sds-color-green-500);
-  --sds-color-text-positive-tertiary: var(--sds-color-green-400);
-  --sds-color-text-utilities-text-on-measurement: var(--sds-color-pink-800);
-  --sds-color-text-utilities-text-on-overlay: var(--sds-color-black-1000);
-  --sds-color-text-warning-default: var(--sds-color-yellow-700);
-  --sds-color-text-warning-on-warning: var(--sds-color-yellow-1000);
-  --sds-color-text-warning-on-warning-secondary: var(--sds-color-yellow-200);
-  --sds-color-text-warning-on-warning-tertiary: var(--sds-color-yellow-300);
-  --sds-color-text-warning-secondary: var(--sds-color-yellow-600);
-  --sds-color-text-warning-tertiary: var(--sds-color-yellow-500);
+
+  /* --- Text / Neutral --- */
+  --sds-color-text-neutral-default: #000000;
+  --sds-color-text-neutral-hovered: #141216;
+  --sds-color-text-neutral-pressed: #242326;
+  --sds-color-text-neutral-selected: #8A22DE;
+  --sds-color-text-neutral-disabled: #AEABB1;
+  --sds-color-text-neutral-secondary: #656367;
+  --sds-color-text-neutral-secondary-hovered: #4A484C;
+  --sds-color-text-neutral-secondary-pressed: #38373B;
+  --sds-color-text-neutral-secondary-selected: #8A22DE;
+  --sds-color-text-neutral-secondary-disabled: #A09EA2;
+  --sds-color-text-neutral-tertiary: #A09EA2;
+
+  /* --- Text / Inverse --- */
+  --sds-color-text-inverse-default: #FFFFFF;
+  --sds-color-text-inverse-on-inverse: #FFFFFF;
+  --sds-color-text-inverse-on-inverse-secondary: #E2DFE6;
+  --sds-color-text-inverse-on-inverse-tertiary: #D5D2D8;
+  --sds-color-text-inverse-hovered: #F5F2F8;
+  --sds-color-text-inverse-pressed: #E2DFE6;
+  --sds-color-text-inverse-selected: #BB73FF;
+  --sds-color-text-inverse-disabled: #A09EA2;
+  --sds-color-text-inverse-secondary: #A09EA2;
+  --sds-color-text-inverse-tertiary: #8A888C;
+
+  /* --- Text / Accent --- */
+  --sds-color-text-accent-default: #8A22DE;
+  --sds-color-text-accent-hovered: #6908AE;
+  --sds-color-text-accent-pressed: #510088;
+  --sds-color-text-accent-disabled: #A09EA2;
+  --sds-color-text-accent-on-accent: #FFFFFF;
+  --sds-color-text-accent-on-accent-secondary: #E2DFE6;
+  --sds-color-text-accent-on-accent-tertiary: #D5D2D8;
+  --sds-color-text-accent-on-accent-hovered: #E2DFE6;
+  --sds-color-text-accent-on-accent-pressed: #D5D2D8;
+  --sds-color-text-accent-on-accent-disabled: #AEABB1;
+  --sds-color-text-accent-secondary: #A238FF;
+  --sds-color-text-accent-tertiary: #BB73FF;
+
+  /* --- Text / Accent OnDark --- */
+  --sds-color-text-accent-on-dark-default: #FFFFFF;
+  --sds-color-text-accent-on-dark-hovered: #F5F2F8;
+  --sds-color-text-accent-on-dark-pressed: #E2DFE6;
+  --sds-color-text-accent-on-dark-disabled: #706E73;
+
+  /* --- Text / Accent OnLight --- */
+  --sds-color-text-accent-on-light-default: #000000;
+  --sds-color-text-accent-on-light-hovered: #141216;
+  --sds-color-text-accent-on-light-pressed: #242326;
+  --sds-color-text-accent-on-light-disabled: #AEABB1;
+
+  /* --- Text / Feedback --- */
+  --sds-color-text-success-default: #1B8C3D;
+  --sds-color-text-success-hovered: #157030;
+  --sds-color-text-success-pressed: #105825;
+  --sds-color-text-success-disabled: #A09EA2;
+  --sds-color-text-success-on-success: #FFFFFF;
+  --sds-color-text-success-on-success-secondary: #B3F5D5;
+  --sds-color-text-success-on-success-tertiary: #86E19D;
+  --sds-color-text-success-secondary: #157030;
+  --sds-color-text-success-tertiary: #105825;
+  --sds-color-text-error-default: #D92C2C;
+  --sds-color-text-error-hovered: #BE2424;
+  --sds-color-text-error-pressed: #A31C1C;
+  --sds-color-text-error-disabled: #A09EA2;
+  --sds-color-text-error-on-error: #FFFFFF;
+  --sds-color-text-error-on-error-secondary: #FFB3B3;
+  --sds-color-text-error-on-error-tertiary: #FF9494;
+  --sds-color-text-error-secondary: #BE2424;
+  --sds-color-text-error-tertiary: #A31C1C;
+  --sds-color-text-warning-default: #B36600;
+  --sds-color-text-warning-hovered: #995700;
+  --sds-color-text-warning-pressed: #804800;
+  --sds-color-text-warning-disabled: #A09EA2;
+  --sds-color-text-warning-on-warning: #331D00;
+  --sds-color-text-warning-on-warning-secondary: #FFE699;
+  --sds-color-text-warning-on-warning-tertiary: #FFCC66;
+  --sds-color-text-warning-secondary: #995700;
+  --sds-color-text-warning-tertiary: #804800;
+
+  /* --- Text / Disabled + Utilities --- */
+  --sds-color-text-disabled-default: #AEABB1;
+  --sds-color-text-disabled-on-disabled: #AEABB1;
+  --sds-color-text-utilities-text-on-measurement: #660055;
+  --sds-color-text-utilities-text-on-overlay: #000000;
+
+  /* --- Icon / Neutral --- */
+  --sds-color-icon-neutral-default: #000000;
+  --sds-color-icon-neutral-hovered: #141216;
+  --sds-color-icon-neutral-pressed: #242326;
+  --sds-color-icon-neutral-selected: #8A22DE;
+  --sds-color-icon-neutral-disabled: #C7C5CB;
+  --sds-color-icon-neutral-secondary: #656367;
+  --sds-color-icon-neutral-secondary-hovered: #4A484C;
+  --sds-color-icon-neutral-secondary-pressed: #38373B;
+  --sds-color-icon-neutral-secondary-selected: #8A22DE;
+  --sds-color-icon-neutral-secondary-disabled: #C7C5CB;
+  --sds-color-icon-neutral-tertiary: #A09EA2;
+
+  /* --- Icon / Accent --- */
+  --sds-color-icon-accent-default: #8A22DE;
+  --sds-color-icon-accent-hovered: #6908AE;
+  --sds-color-icon-accent-pressed: #510088;
+  --sds-color-icon-accent-disabled: #C7C5CB;
+  --sds-color-icon-accent-on-accent: #FFFFFF;
+  --sds-color-icon-accent-on-accent-secondary: #E2DFE6;
+  --sds-color-icon-accent-on-accent-tertiary: #D5D2D8;
+  --sds-color-icon-accent-on-accent-hovered: #E2DFE6;
+  --sds-color-icon-accent-on-accent-pressed: #D5D2D8;
+  --sds-color-icon-accent-on-accent-disabled: #C7C5CB;
+  --sds-color-icon-accent-secondary: #A238FF;
+  --sds-color-icon-accent-tertiary: #BB73FF;
+
+  /* --- Icon / Accent OnDark --- */
+  --sds-color-icon-accent-on-dark-default: #FFFFFF;
+  --sds-color-icon-accent-on-dark-hovered: #F5F2F8;
+  --sds-color-icon-accent-on-dark-pressed: #E2DFE6;
+  --sds-color-icon-accent-on-dark-disabled: #706E73;
+
+  /* --- Icon / Accent OnLight --- */
+  --sds-color-icon-accent-on-light-default: #000000;
+  --sds-color-icon-accent-on-light-hovered: #141216;
+  --sds-color-icon-accent-on-light-pressed: #242326;
+  --sds-color-icon-accent-on-light-disabled: #C7C5CB;
+
+  /* --- Icon / Feedback --- */
+  --sds-color-icon-success-default: #1B8C3D;
+  --sds-color-icon-success-hovered: #157030;
+  --sds-color-icon-success-pressed: #105825;
+  --sds-color-icon-success-disabled: #C7C5CB;
+  --sds-color-icon-success-on-success: #FFFFFF;
+  --sds-color-icon-success-on-success-secondary: #B3F5D5;
+  --sds-color-icon-success-on-success-tertiary: #86E19D;
+  --sds-color-icon-success-secondary: #157030;
+  --sds-color-icon-success-tertiary: #105825;
+  --sds-color-icon-error-default: #D92C2C;
+  --sds-color-icon-error-hovered: #BE2424;
+  --sds-color-icon-error-pressed: #A31C1C;
+  --sds-color-icon-error-disabled: #C7C5CB;
+  --sds-color-icon-error-on-error: #FFFFFF;
+  --sds-color-icon-error-on-error-secondary: #FFB3B3;
+  --sds-color-icon-error-on-error-tertiary: #FF9494;
+  --sds-color-icon-error-secondary: #BE2424;
+  --sds-color-icon-error-tertiary: #A31C1C;
+  --sds-color-icon-warning-default: #B36600;
+  --sds-color-icon-warning-hovered: #995700;
+  --sds-color-icon-warning-pressed: #804800;
+  --sds-color-icon-warning-disabled: #C7C5CB;
+  --sds-color-icon-warning-on-warning: #331D00;
+  --sds-color-icon-warning-on-warning-secondary: #FFE699;
+  --sds-color-icon-warning-on-warning-tertiary: #FFCC66;
+  --sds-color-icon-warning-secondary: #995700;
+  --sds-color-icon-warning-tertiary: #804800;
+
+  /* --- Icon / Disabled + Utilities --- */
+  --sds-color-icon-disabled-default: #C7C5CB;
+  --sds-color-icon-disabled-on-disabled: #C7C5CB;
+  --sds-color-icon-utilities-icon: #CC00AA;
+  --sds-color-icon-utilities-icon-on-measurement: #660055;
 }
 @media (prefers-color-scheme: dark) {
-  /* color: sds_dark — mapped to Deezer Tempo Dark (primary theme) */
+  /* semantic_colors: dark — Deezer Tempo Dark */
   :root {
-    --sds-color-background-brand-default: var(--sds-color-brand-600);
-    --sds-color-background-brand-hover: var(--sds-color-brand-500);
-    --sds-color-background-brand-secondary: var(--sds-color-brand-1000);
-    --sds-color-background-brand-secondary-hover: var(--sds-color-brand-900);
-    --sds-color-background-brand-tertiary: var(--sds-color-brand-1000);
-    --sds-color-background-brand-tertiary-hover: var(--sds-color-brand-900);
-    --sds-color-background-danger-default: var(--sds-color-red-500);
-    --sds-color-background-danger-hover: var(--sds-color-red-400);
-    --sds-color-background-danger-secondary: var(--sds-color-red-900);
-    --sds-color-background-danger-secondary-hover: var(--sds-color-red-800);
-    --sds-color-background-danger-tertiary: var(--sds-color-red-1000);
-    --sds-color-background-danger-tertiary-hover: var(--sds-color-red-900);
-    --sds-color-background-default-default: var(--sds-color-gray-1000);
-    --sds-color-background-default-default-hover: var(--sds-color-gray-900);
-    --sds-color-background-default-secondary: var(--sds-color-gray-900);
-    --sds-color-background-default-secondary-hover: var(--sds-color-gray-800);
-    --sds-color-background-default-tertiary: var(--sds-color-gray-800);
-    --sds-color-background-default-tertiary-hover: var(--sds-color-gray-700);
-    --sds-color-background-disabled-default: var(--sds-color-gray-800);
-    --sds-color-background-neutral-default: var(--sds-color-white-1000);
-    --sds-color-background-neutral-hover: var(--sds-color-slate-100);
-    --sds-color-background-neutral-secondary: var(--sds-color-slate-900);
-    --sds-color-background-neutral-secondary-hover: var(--sds-color-slate-1000);
-    --sds-color-background-neutral-tertiary: var(--sds-color-slate-900);
-    --sds-color-background-neutral-tertiary-hover: var(--sds-color-slate-1000);
-    --sds-color-background-positive-default: var(--sds-color-green-500);
-    --sds-color-background-positive-hover: var(--sds-color-green-400);
-    --sds-color-background-positive-secondary: var(--sds-color-green-900);
-    --sds-color-background-positive-secondary-hover: var(--sds-color-green-800);
-    --sds-color-background-positive-tertiary: var(--sds-color-green-1000);
-    --sds-color-background-positive-tertiary-hover: var(--sds-color-green-900);
+    /* --- Background / Neutral --- */
+    --sds-color-background-neutral-default: #000000;
+    --sds-color-background-neutral-hovered: #141216;
+    --sds-color-background-neutral-pressed: #242326;
+    --sds-color-background-neutral-selected: #350060;
+    --sds-color-background-neutral-disabled: #242326;
+    --sds-color-background-neutral-secondary: #141216;
+    --sds-color-background-neutral-secondary-hovered: #242326;
+    --sds-color-background-neutral-secondary-pressed: #2E2C30;
+    --sds-color-background-neutral-secondary-selected: #350060;
+    --sds-color-background-neutral-secondary-disabled: #242326;
+    --sds-color-background-neutral-tertiary: #242326;
+    --sds-color-background-neutral-tertiary-hovered: #2E2C30;
+    --sds-color-background-neutral-tertiary-pressed: #38373B;
+    --sds-color-background-neutral-tertiary-selected: #350060;
+    --sds-color-background-neutral-tertiary-disabled: #2E2C30;
+
+    /* --- Background / Inverse --- */
+    --sds-color-background-inverse-default: #FFFFFF;
+    --sds-color-background-inverse-hovered: #F5F2F8;
+    --sds-color-background-inverse-pressed: #E2DFE6;
+    --sds-color-background-inverse-selected: #F9E8FF;
+    --sds-color-background-inverse-disabled: #E2DFE6;
+    --sds-color-background-inverse-secondary: #2E2C30;
+    --sds-color-background-inverse-secondary-hovered: #38373B;
+    --sds-color-background-inverse-tertiary: #242326;
+    --sds-color-background-inverse-tertiary-hovered: #2E2C30;
+
+    /* --- Background / Accent --- */
+    --sds-color-background-accent-default: #AD47FF;
+    --sds-color-background-accent-hovered: #BB73FF;
+    --sds-color-background-accent-pressed: #CA97FF;
+    --sds-color-background-accent-disabled: #2E2C30;
+    --sds-color-background-accent-secondary: #1E0038;
+    --sds-color-background-accent-secondary-hovered: #2A004D;
+    --sds-color-background-accent-secondary-pressed: #350060;
+    --sds-color-background-accent-secondary-disabled: #2E2C30;
+    --sds-color-background-accent-tertiary: #1E0038;
+    --sds-color-background-accent-tertiary-hovered: #2A004D;
+
+    /* --- Background / Accent OnContent --- */
+    --sds-color-background-accent-on-content-default: #00000066;
+    --sds-color-background-accent-on-content-hovered: #0000008F;
+    --sds-color-background-accent-on-content-pressed: #000000A3;
+    --sds-color-background-accent-on-content-disabled: #00000029;
+
+    /* --- Background / Accent OnDark --- */
+    --sds-color-background-accent-on-dark-default: #FFFFFF;
+    --sds-color-background-accent-on-dark-hovered: #F5F2F8;
+    --sds-color-background-accent-on-dark-pressed: #E2DFE6;
+    --sds-color-background-accent-on-dark-selected: #F9E8FF;
+    --sds-color-background-accent-on-dark-disabled: #E2DFE6;
+
+    /* --- Background / Accent OnLight --- */
+    --sds-color-background-accent-on-light-default: #000000;
+    --sds-color-background-accent-on-light-hovered: #141216;
+    --sds-color-background-accent-on-light-pressed: #242326;
+    --sds-color-background-accent-on-light-selected: #350060;
+    --sds-color-background-accent-on-light-disabled: #242326;
+
+    /* --- Background / Feedback --- */
+    --sds-color-background-success-default: #34C759;
+    --sds-color-background-success-hovered: #5DD47B;
+    --sds-color-background-success-pressed: #86E19D;
+    --sds-color-background-success-disabled: #2E2C30;
+    --sds-color-background-success-secondary: #0A3D19;
+    --sds-color-background-success-secondary-hovered: #105825;
+    --sds-color-background-success-tertiary: #052E10;
+    --sds-color-background-success-tertiary-hovered: #0A3D19;
+    --sds-color-background-error-default: #FF4D4D;
+    --sds-color-background-error-hovered: #FF7070;
+    --sds-color-background-error-pressed: #FF9494;
+    --sds-color-background-error-disabled: #2E2C30;
+    --sds-color-background-error-secondary: #7A1414;
+    --sds-color-background-error-secondary-hovered: #A31C1C;
+    --sds-color-background-error-tertiary: #4D0D0D;
+    --sds-color-background-error-tertiary-hovered: #7A1414;
+    --sds-color-background-warning-default: #FFAA00;
+    --sds-color-background-warning-hovered: #FFBB33;
+    --sds-color-background-warning-pressed: #FFCC66;
+    --sds-color-background-warning-disabled: #2E2C30;
+    --sds-color-background-warning-secondary: #4D2B00;
+    --sds-color-background-warning-secondary-hovered: #804800;
+    --sds-color-background-warning-tertiary: #331D00;
+    --sds-color-background-warning-tertiary-hovered: #4D2B00;
+
+    /* --- Background / Disabled --- */
+    --sds-color-background-disabled-default: #2E2C30;
+
+    /* --- Background / Utilities --- */
     --sds-color-background-utilities-blanket: #000000b2;
-    --sds-color-background-utilities-measurement: var(--sds-color-pink-800);
+    --sds-color-background-utilities-measurement: #660055;
     --sds-color-background-utilities-overlay: #00000066;
     --sds-color-background-utilities-scrim: #000000cc;
-    --sds-color-background-warning-default: var(--sds-color-yellow-500);
-    --sds-color-background-warning-hover: var(--sds-color-yellow-400);
-    --sds-color-background-warning-secondary: var(--sds-color-yellow-900);
-    --sds-color-background-warning-secondary-hover: var(--sds-color-yellow-800);
-    --sds-color-background-warning-tertiary: var(--sds-color-yellow-1000);
-    --sds-color-background-warning-tertiary-hover: var(--sds-color-yellow-900);
-    --sds-color-border-brand-default: var(--sds-color-brand-600);
-    --sds-color-border-brand-secondary: var(--sds-color-brand-500);
-    --sds-color-border-brand-tertiary: var(--sds-color-brand-400);
-    --sds-color-border-danger-default: var(--sds-color-red-500);
-    --sds-color-border-danger-secondary: var(--sds-color-red-400);
-    --sds-color-border-danger-tertiary: var(--sds-color-red-300);
-    --sds-color-border-default-default: var(--sds-color-gray-700);
-    --sds-color-border-default-secondary: var(--sds-color-gray-600);
-    --sds-color-border-default-tertiary: var(--sds-color-gray-500);
-    --sds-color-border-disabled-default: var(--sds-color-gray-800);
-    --sds-color-border-neutral-default: var(--sds-color-slate-200);
-    --sds-color-border-neutral-secondary: var(--sds-color-slate-500);
-    --sds-color-border-neutral-tertiary: var(--sds-color-slate-600);
-    --sds-color-border-positive-default: var(--sds-color-green-500);
-    --sds-color-border-positive-secondary: var(--sds-color-green-400);
-    --sds-color-border-positive-tertiary: var(--sds-color-green-300);
-    --sds-color-border-utilities-measurement: var(--sds-color-pink-600);
+
+    /* --- Border / Neutral --- */
+    --sds-color-border-neutral-default: #4E4C51;
+    --sds-color-border-neutral-hovered: #59575C;
+    --sds-color-border-neutral-pressed: #656367;
+    --sds-color-border-neutral-focused: #AD47FF;
+    --sds-color-border-neutral-disabled: #434146;
+    --sds-color-border-neutral-secondary: #38373B;
+    --sds-color-border-neutral-tertiary: #2E2C30;
+
+    /* --- Border / Accent --- */
+    --sds-color-border-accent-default: #AD47FF;
+    --sds-color-border-accent-focused: #F5F2F8;
+    --sds-color-border-accent-secondary: #AD47FF;
+    --sds-color-border-accent-tertiary: #BB73FF;
+
+    /* --- Border / Accent OnContent --- */
+    --sds-color-border-accent-on-content-default: #FFFFFF;
+    --sds-color-border-accent-on-content-hovered: #F5F2F8;
+    --sds-color-border-accent-on-content-pressed: #E2DFE6;
+    --sds-color-border-accent-on-content-focused: #AD47FF;
+    --sds-color-border-accent-on-content-disabled: #656367;
+
+    /* --- Border / Feedback --- */
+    --sds-color-border-success-default: #34C759;
+    --sds-color-border-success-secondary: #5DD47B;
+    --sds-color-border-success-tertiary: #86E19D;
+    --sds-color-border-error-default: #FF4D4D;
+    --sds-color-border-error-secondary: #FF7070;
+    --sds-color-border-error-tertiary: #FF9494;
+    --sds-color-border-warning-default: #FFAA00;
+    --sds-color-border-warning-secondary: #FFBB33;
+    --sds-color-border-warning-tertiary: #FFCC66;
+
+    /* --- Border / Disabled + Utilities --- */
+    --sds-color-border-disabled-default: #38373B;
+    --sds-color-border-utilities-measurement: #CC00AA;
     --sds-color-border-utilities-swatch: #ffffff3d;
-    --sds-color-border-warning-default: var(--sds-color-yellow-400);
-    --sds-color-border-warning-secondary: var(--sds-color-yellow-500);
-    --sds-color-border-warning-tertiary: var(--sds-color-yellow-600);
-    --sds-color-icon-brand-default: var(--sds-color-brand-500);
-    --sds-color-icon-brand-on-brand: var(--sds-color-white-1000);
-    --sds-color-icon-brand-on-brand-secondary: var(--sds-color-brand-200);
-    --sds-color-icon-brand-on-brand-tertiary: var(--sds-color-brand-300);
-    --sds-color-icon-brand-secondary: var(--sds-color-brand-400);
-    --sds-color-icon-brand-tertiary: var(--sds-color-brand-300);
-    --sds-color-icon-danger-default: var(--sds-color-red-500);
-    --sds-color-icon-danger-on-danger: var(--sds-color-white-1000);
-    --sds-color-icon-danger-on-danger-secondary: var(--sds-color-red-200);
-    --sds-color-icon-danger-on-danger-tertiary: var(--sds-color-red-300);
-    --sds-color-icon-danger-secondary: var(--sds-color-red-400);
-    --sds-color-icon-danger-tertiary: var(--sds-color-red-300);
-    --sds-color-icon-default-default: var(--sds-color-white-1000);
-    --sds-color-icon-default-secondary: var(--sds-color-slate-500);
-    --sds-color-icon-default-tertiary: var(--sds-color-slate-600);
-    --sds-color-icon-disabled-default: var(--sds-color-gray-800);
-    --sds-color-icon-disabled-on-disabled: var(--sds-color-gray-700);
-    --sds-color-icon-neutral-default: var(--sds-color-white-1000);
-    --sds-color-icon-neutral-on-neutral: var(--sds-color-gray-1000);
-    --sds-color-icon-neutral-on-neutral-secondary: var(--sds-color-slate-200);
-    --sds-color-icon-neutral-on-neutral-tertiary: var(--sds-color-slate-300);
-    --sds-color-icon-neutral-secondary: var(--sds-color-slate-500);
-    --sds-color-icon-neutral-tertiary: var(--sds-color-slate-600);
-    --sds-color-icon-positive-default: var(--sds-color-green-500);
-    --sds-color-icon-positive-on-positive: var(--sds-color-white-1000);
-    --sds-color-icon-positive-on-positive-secondary: var(--sds-color-green-200);
-    --sds-color-icon-positive-on-positive-tertiary: var(--sds-color-green-300);
-    --sds-color-icon-positive-secondary: var(--sds-color-green-400);
-    --sds-color-icon-positive-tertiary: var(--sds-color-green-300);
-    --sds-color-icon-utilities-icon: var(--sds-color-pink-400);
-    --sds-color-icon-utilities-icon-on-measurement: var(--sds-color-pink-200);
-    --sds-color-icon-warning-default: var(--sds-color-yellow-500);
-    --sds-color-icon-warning-on-warning: var(--sds-color-yellow-1000);
-    --sds-color-icon-warning-on-warning-secondary: var(--sds-color-yellow-200);
-    --sds-color-icon-warning-on-warning-tertiary: var(--sds-color-yellow-300);
-    --sds-color-icon-warning-secondary: var(--sds-color-yellow-400);
-    --sds-color-icon-warning-tertiary: var(--sds-color-yellow-300);
-    --sds-color-text-brand-default: var(--sds-color-brand-500);
-    --sds-color-text-brand-on-brand: var(--sds-color-white-1000);
-    --sds-color-text-brand-on-brand-secondary: var(--sds-color-brand-200);
-    --sds-color-text-brand-on-brand-tertiary: var(--sds-color-brand-300);
-    --sds-color-text-brand-secondary: var(--sds-color-brand-400);
-    --sds-color-text-brand-tertiary: var(--sds-color-brand-300);
-    --sds-color-text-danger-default: var(--sds-color-red-500);
-    --sds-color-text-danger-on-danger: var(--sds-color-white-1000);
-    --sds-color-text-danger-on-danger-secondary: var(--sds-color-red-200);
-    --sds-color-text-danger-on-danger-tertiary: var(--sds-color-red-300);
-    --sds-color-text-danger-secondary: var(--sds-color-red-400);
-    --sds-color-text-danger-tertiary: var(--sds-color-red-300);
-    --sds-color-text-default-default: var(--sds-color-white-1000);
-    --sds-color-text-default-secondary: var(--sds-color-slate-500);
-    --sds-color-text-default-tertiary: var(--sds-color-slate-600);
-    --sds-color-text-disabled-default: var(--sds-color-gray-700);
-    --sds-color-text-disabled-on-disabled: var(--sds-color-gray-700);
-    --sds-color-text-neutral-default: var(--sds-color-white-1000);
-    --sds-color-text-neutral-on-neutral: var(--sds-color-gray-1000);
-    --sds-color-text-neutral-on-neutral-secondary: var(--sds-color-slate-200);
-    --sds-color-text-neutral-on-neutral-tertiary: var(--sds-color-slate-300);
-    --sds-color-text-neutral-secondary: var(--sds-color-slate-500);
-    --sds-color-text-neutral-tertiary: var(--sds-color-slate-600);
-    --sds-color-text-positive-default: var(--sds-color-green-500);
-    --sds-color-text-positive-on-positive: var(--sds-color-white-1000);
-    --sds-color-text-positive-on-positive-secondary: var(--sds-color-green-200);
-    --sds-color-text-positive-on-positive-tertiary: var(--sds-color-green-300);
-    --sds-color-text-positive-secondary: var(--sds-color-green-400);
-    --sds-color-text-positive-tertiary: var(--sds-color-green-300);
-    --sds-color-text-utilities-text-on-measurement: var(--sds-color-pink-200);
-    --sds-color-text-utilities-text-on-overlay: var(--sds-color-white-1000);
-    --sds-color-text-warning-default: var(--sds-color-yellow-500);
-    --sds-color-text-warning-on-warning: var(--sds-color-yellow-1000);
-    --sds-color-text-warning-on-warning-secondary: var(--sds-color-yellow-200);
-    --sds-color-text-warning-on-warning-tertiary: var(--sds-color-yellow-300);
-    --sds-color-text-warning-secondary: var(--sds-color-yellow-400);
-    --sds-color-text-warning-tertiary: var(--sds-color-yellow-300);
+
+    /* --- Text / Neutral --- */
+    --sds-color-text-neutral-default: #FFFFFF;
+    --sds-color-text-neutral-hovered: #F5F2F8;
+    --sds-color-text-neutral-pressed: #E2DFE6;
+    --sds-color-text-neutral-selected: #BB73FF;
+    --sds-color-text-neutral-disabled: #656367;
+    --sds-color-text-neutral-secondary: #A19FA4;
+    --sds-color-text-neutral-secondary-hovered: #AEABB1;
+    --sds-color-text-neutral-secondary-pressed: #BAB8BE;
+    --sds-color-text-neutral-secondary-selected: #BB73FF;
+    --sds-color-text-neutral-secondary-disabled: #656367;
+    --sds-color-text-neutral-tertiary: #656367;
+
+    /* --- Text / Inverse --- */
+    --sds-color-text-inverse-default: #000000;
+    --sds-color-text-inverse-on-inverse: #000000;
+    --sds-color-text-inverse-on-inverse-secondary: #E2DFE6;
+    --sds-color-text-inverse-on-inverse-tertiary: #D5D2D8;
+    --sds-color-text-inverse-hovered: #141216;
+    --sds-color-text-inverse-pressed: #242326;
+    --sds-color-text-inverse-selected: #8A22DE;
+    --sds-color-text-inverse-disabled: #656367;
+    --sds-color-text-inverse-secondary: #656367;
+    --sds-color-text-inverse-tertiary: #4E4C51;
+
+    /* --- Text / Accent --- */
+    --sds-color-text-accent-default: #BB73FF;
+    --sds-color-text-accent-hovered: #CA97FF;
+    --sds-color-text-accent-pressed: #D9B5FF;
+    --sds-color-text-accent-disabled: #656367;
+    --sds-color-text-accent-on-accent: #FFFFFF;
+    --sds-color-text-accent-on-accent-secondary: #F5F2F8;
+    --sds-color-text-accent-on-accent-tertiary: #E2DFE6;
+    --sds-color-text-accent-on-accent-hovered: #F5F2F8;
+    --sds-color-text-accent-on-accent-pressed: #E2DFE6;
+    --sds-color-text-accent-on-accent-disabled: #656367;
+    --sds-color-text-accent-secondary: #CA97FF;
+    --sds-color-text-accent-tertiary: #D9B5FF;
+
+    /* --- Text / Accent OnDark --- */
+    --sds-color-text-accent-on-dark-default: #FFFFFF;
+    --sds-color-text-accent-on-dark-hovered: #F5F2F8;
+    --sds-color-text-accent-on-dark-pressed: #E2DFE6;
+    --sds-color-text-accent-on-dark-disabled: #706E73;
+
+    /* --- Text / Accent OnLight --- */
+    --sds-color-text-accent-on-light-default: #000000;
+    --sds-color-text-accent-on-light-hovered: #141216;
+    --sds-color-text-accent-on-light-pressed: #242326;
+    --sds-color-text-accent-on-light-disabled: #AEABB1;
+
+    /* --- Text / Feedback --- */
+    --sds-color-text-success-default: #34C759;
+    --sds-color-text-success-hovered: #5DD47B;
+    --sds-color-text-success-pressed: #86E19D;
+    --sds-color-text-success-disabled: #656367;
+    --sds-color-text-success-on-success: #FFFFFF;
+    --sds-color-text-success-on-success-secondary: #B3F5D5;
+    --sds-color-text-success-on-success-tertiary: #86E19D;
+    --sds-color-text-success-secondary: #5DD47B;
+    --sds-color-text-success-tertiary: #86E19D;
+    --sds-color-text-error-default: #FF4D4D;
+    --sds-color-text-error-hovered: #FF7070;
+    --sds-color-text-error-pressed: #FF9494;
+    --sds-color-text-error-disabled: #656367;
+    --sds-color-text-error-on-error: #FFFFFF;
+    --sds-color-text-error-on-error-secondary: #FFB3B3;
+    --sds-color-text-error-on-error-tertiary: #FF9494;
+    --sds-color-text-error-secondary: #FF7070;
+    --sds-color-text-error-tertiary: #FF9494;
+    --sds-color-text-warning-default: #FFAA00;
+    --sds-color-text-warning-hovered: #FFBB33;
+    --sds-color-text-warning-pressed: #FFCC66;
+    --sds-color-text-warning-disabled: #656367;
+    --sds-color-text-warning-on-warning: #331D00;
+    --sds-color-text-warning-on-warning-secondary: #FFE699;
+    --sds-color-text-warning-on-warning-tertiary: #FFCC66;
+    --sds-color-text-warning-secondary: #FFBB33;
+    --sds-color-text-warning-tertiary: #FFCC66;
+
+    /* --- Text / Disabled + Utilities --- */
+    --sds-color-text-disabled-default: #656367;
+    --sds-color-text-disabled-on-disabled: #656367;
+    --sds-color-text-utilities-text-on-measurement: #FFB3E0;
+    --sds-color-text-utilities-text-on-overlay: #FFFFFF;
+
+    /* --- Icon / Neutral --- */
+    --sds-color-icon-neutral-default: #FFFFFF;
+    --sds-color-icon-neutral-hovered: #F5F2F8;
+    --sds-color-icon-neutral-pressed: #E2DFE6;
+    --sds-color-icon-neutral-selected: #BB73FF;
+    --sds-color-icon-neutral-disabled: #38373B;
+    --sds-color-icon-neutral-secondary: #A19FA4;
+    --sds-color-icon-neutral-secondary-hovered: #AEABB1;
+    --sds-color-icon-neutral-secondary-pressed: #BAB8BE;
+    --sds-color-icon-neutral-secondary-selected: #BB73FF;
+    --sds-color-icon-neutral-secondary-disabled: #656367;
+    --sds-color-icon-neutral-tertiary: #656367;
+
+    /* --- Icon / Accent --- */
+    --sds-color-icon-accent-default: #BB73FF;
+    --sds-color-icon-accent-hovered: #CA97FF;
+    --sds-color-icon-accent-pressed: #D9B5FF;
+    --sds-color-icon-accent-disabled: #38373B;
+    --sds-color-icon-accent-on-accent: #FFFFFF;
+    --sds-color-icon-accent-on-accent-secondary: #F5F2F8;
+    --sds-color-icon-accent-on-accent-tertiary: #E2DFE6;
+    --sds-color-icon-accent-on-accent-hovered: #F5F2F8;
+    --sds-color-icon-accent-on-accent-pressed: #E2DFE6;
+    --sds-color-icon-accent-on-accent-disabled: #38373B;
+    --sds-color-icon-accent-secondary: #CA97FF;
+    --sds-color-icon-accent-tertiary: #D9B5FF;
+
+    /* --- Icon / Accent OnDark --- */
+    --sds-color-icon-accent-on-dark-default: #FFFFFF;
+    --sds-color-icon-accent-on-dark-hovered: #F5F2F8;
+    --sds-color-icon-accent-on-dark-pressed: #E2DFE6;
+    --sds-color-icon-accent-on-dark-disabled: #706E73;
+
+    /* --- Icon / Accent OnLight --- */
+    --sds-color-icon-accent-on-light-default: #000000;
+    --sds-color-icon-accent-on-light-hovered: #141216;
+    --sds-color-icon-accent-on-light-pressed: #242326;
+    --sds-color-icon-accent-on-light-disabled: #38373B;
+
+    /* --- Icon / Feedback --- */
+    --sds-color-icon-success-default: #34C759;
+    --sds-color-icon-success-hovered: #5DD47B;
+    --sds-color-icon-success-pressed: #86E19D;
+    --sds-color-icon-success-disabled: #38373B;
+    --sds-color-icon-success-on-success: #FFFFFF;
+    --sds-color-icon-success-on-success-secondary: #B3F5D5;
+    --sds-color-icon-success-on-success-tertiary: #86E19D;
+    --sds-color-icon-success-secondary: #5DD47B;
+    --sds-color-icon-success-tertiary: #86E19D;
+    --sds-color-icon-error-default: #FF4D4D;
+    --sds-color-icon-error-hovered: #FF7070;
+    --sds-color-icon-error-pressed: #FF9494;
+    --sds-color-icon-error-disabled: #38373B;
+    --sds-color-icon-error-on-error: #FFFFFF;
+    --sds-color-icon-error-on-error-secondary: #FFB3B3;
+    --sds-color-icon-error-on-error-tertiary: #FF9494;
+    --sds-color-icon-error-secondary: #FF7070;
+    --sds-color-icon-error-tertiary: #FF9494;
+    --sds-color-icon-warning-default: #FFAA00;
+    --sds-color-icon-warning-hovered: #FFBB33;
+    --sds-color-icon-warning-pressed: #FFCC66;
+    --sds-color-icon-warning-disabled: #38373B;
+    --sds-color-icon-warning-on-warning: #331D00;
+    --sds-color-icon-warning-on-warning-secondary: #FFE699;
+    --sds-color-icon-warning-on-warning-tertiary: #FFCC66;
+    --sds-color-icon-warning-secondary: #FFBB33;
+    --sds-color-icon-warning-tertiary: #FFCC66;
+
+    /* --- Icon / Disabled + Utilities --- */
+    --sds-color-icon-disabled-default: #38373B;
+    --sds-color-icon-disabled-on-disabled: #38373B;
+    --sds-color-icon-utilities-icon: #FF4DB8;
+    --sds-color-icon-utilities-icon-on-measurement: #FFB3E0;
   }
 }
 /* size: default (default) — Deezer Tempo spacing/radius */

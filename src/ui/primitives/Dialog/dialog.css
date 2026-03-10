@@ -23,7 +23,7 @@
 
 .dialog {
   --dialog-padding-y: var(--sds-size-space-800);
-  background: var(--sds-color-background-default-default);
+  background: var(--sds-color-background-neutral-default);
   box-shadow: var(--sds-effects-shadows-drop-shadow-400);
   box-sizing: border-box;
   display: flex;
@@ -46,14 +46,14 @@
 .dialog-type-card {
   border-radius: var(--sds-size-radius-200);
   border: var(--sds-size-stroke-border) solid
-    var(--sds-color-border-default-default);
+    var(--sds-color-border-neutral-default);
   max-width: var(--global-dialog-max-width);
   width: calc(100% - var(--sds-size-space-400) * 2);
 }
 .dialog-type-sheet {
   align-self: flex-end;
   border-top: var(--sds-size-stroke-border) solid
-    var(--sds-color-border-default-default);
+    var(--sds-color-border-neutral-default);
   max-width: 100%;
   width: 100%;
   padding-left: calc((100% - min(var(--global-container-max-width), 100%)) / 2);

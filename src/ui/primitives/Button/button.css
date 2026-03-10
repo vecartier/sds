@@ -59,51 +59,51 @@
 }
 
 .button-variant-primary {
-  --button-background-color: var(--sds-color-background-brand-default);
-  --button-border-color: var(--sds-color-border-brand-default);
-  --button-color: var(--sds-color-text-brand-on-brand);
+  --button-background-color: var(--sds-color-background-accent-default);
+  --button-border-color: var(--sds-color-border-accent-default);
+  --button-color: var(--sds-color-text-accent-on-accent);
   &[data-hovered]:not([data-disabled]) {
-    --button-background-color: var(--sds-color-background-brand-hover);
-    --button-border-color: var(--sds-color-border-brand-default);
+    --button-background-color: var(--sds-color-background-accent-hovered);
+    --button-border-color: var(--sds-color-border-accent-default);
   }
 }
 .button-variant-neutral {
-  --button-background-color: var(--sds-color-background-default-secondary);
-  --button-border-color: var(--sds-color-border-default-default);
-  --button-color: var(--sds-color-text-default-default);
+  --button-background-color: var(--sds-color-background-neutral-secondary);
+  --button-border-color: var(--sds-color-border-neutral-default);
+  --button-color: var(--sds-color-text-neutral-default);
   &[data-hovered]:not([data-disabled]) {
     --button-background-color: var(
-      --sds-color-background-default-secondary-hover
+      --sds-color-background-neutral-secondary-hovered
     );
   }
 }
 .button-variant-subtle {
   --button-background-color: transparent;
   --button-border-color: transparent;
-  --button-color: var(--sds-color-text-brand-default);
+  --button-color: var(--sds-color-text-accent-default);
   &[data-hovered]:not([data-disabled]) {
     --button-background-color: var(
-      --sds-color-background-default-default-hover
+      --sds-color-background-neutral-hovered
     );
   }
 }
 
 .button-variant-danger-primary {
-  --button-background-color: var(--sds-color-background-danger-default);
-  --button-border-color: var(--sds-color-border-danger-secondary);
-  --button-color: var(--sds-color-text-danger-on-danger);
+  --button-background-color: var(--sds-color-background-error-default);
+  --button-border-color: var(--sds-color-border-error-secondary);
+  --button-color: var(--sds-color-text-error-on-error);
   &[data-hovered]:not([data-disabled]) {
-    --button-background-color: var(--sds-color-background-danger-hover);
-    --button-border-color: var(--sds-color-border-danger-default);
+    --button-background-color: var(--sds-color-background-error-hovered);
+    --button-border-color: var(--sds-color-border-error-default);
   }
 }
 .button-variant-danger-subtle {
   --button-background-color: transparent;
   --button-border-color: transparent;
-  --button-color: var(--sds-color-text-danger-default);
+  --button-color: var(--sds-color-text-error-default);
   &[data-hovered]:not([data-disabled]) {
     --button-background-color: var(
-      --sds-color-background-danger-tertiary-hover
+      --sds-color-background-error-tertiary-hovered
     );
   }
 }

@@ -7,18 +7,18 @@
 
 .accordion-item {
   --border-radius: var(--sds-size-radius-200);
-  background: var(--sds-color-background-default-secondary);
+  background: var(--sds-color-background-neutral-secondary);
   box-shadow: inset 0 0 0 var(--sds-size-stroke-border)
-    var(--sds-color-border-default-default);
+    var(--sds-color-border-neutral-default);
   border-radius: var(--border-radius);
-  color: var(--sds-color-text-default-default);
+  color: var(--sds-color-text-neutral-default);
   display: flex;
   flex-direction: column;
   line-height: var(--global-line-height-body);
   width: 100%;
 
   &:has(.accordion-item-title > button[data-hovered]) {
-    background: var(--sds-color-background-default-secondary-hover);
+    background: var(--sds-color-background-neutral-secondary-hovered);
   }
 
   &:has(.accordion-item-title > button[data-focus-visible]) {
@@ -40,7 +40,7 @@
 
   .accordion-item-title > button {
     align-items: center;
-    color: var(--sds-color-text-default-default);
+    color: var(--sds-color-text-neutral-default);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@
   }
 
   .accordion-item-indicator {
-    --icon-fill: var(--sds-color-icon-default-default);
+    --icon-fill: var(--sds-color-icon-neutral-default);
   }
 
   .accordion-item-content {
@@ -63,7 +63,7 @@
   }
 
   &[data-expanded] {
-    background: var(--sds-color-background-default-default);
+    background: var(--sds-color-background-neutral-default);
 
     > .accordion-item-title > button {
       padding-bottom: var(--sds-size-space-200);
@@ -74,7 +74,7 @@
     }
 
     &:has(.accordion-item-title > button[data-hovered]) {
-      background: var(--sds-color-background-default-default-hover);
+      background: var(--sds-color-background-neutral-hovered);
     }
 
     > .accordion-item-content {

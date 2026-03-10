@@ -2,9 +2,9 @@
   width: 100%;
 }
 .select {
-  --select-background-color: var(--sds-color-background-default-default);
-  --select-text-color: var(--sds-color-text-default-default);
-  --select-border-color: var(--sds-color-border-default-default);
+  --select-background-color: var(--sds-color-background-neutral-default);
+  --select-text-color: var(--sds-color-text-neutral-default);
+  --select-border-color: var(--sds-color-border-neutral-default);
   align-items: center;
   background-color: var(--select-background-color);
   box-shadow: inset 0 0 0 var(--sds-size-stroke-border)
@@ -22,7 +22,7 @@
   width: 100%;
 
   > .icon {
-    --icon-color: var(--sds-color-icon-default-default);
+    --icon-color: var(--sds-color-icon-neutral-default);
   }
 
   > .select-value {
@@ -32,7 +32,7 @@
     gap: var(--sds-size-space-200);
 
     &[data-placeholder] {
-      --select-text-color: var(--sds-color-text-default-tertiary);
+      --select-text-color: var(--sds-color-text-neutral-tertiary);
     }
 
     .select-item-check {
@@ -51,11 +51,11 @@
 
   &:has(~ .error-message):not([data-disabled]),
   &[data-invalid]:not([data-disabled]) {
-    --select-border-color: var(--sds-color-border-danger-default);
+    --select-border-color: var(--sds-color-border-error-default);
   }
 
   &[data-focus-visible] {
-    --select-border-color: var(--sds-color-border-brand-secondary);
+    --select-border-color: var(--sds-color-border-accent-secondary);
   }
 }
 

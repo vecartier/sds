@@ -1,7 +1,7 @@
 .switch {
-  --switch-background: var(--sds-color-background-default-secondary);
-  --switch-border: var(--sds-color-border-default-default);
-  --switch-icon: var(--sds-color-icon-default-secondary);
+  --switch-background: var(--sds-color-background-neutral-secondary);
+  --switch-border: var(--sds-color-border-neutral-default);
+  --switch-icon: var(--sds-color-icon-neutral-secondary);
   --switch-padding: var(--sds-size-space-100);
   --switch-width: calc(var(--sds-size-space-400) + var(--sds-size-space-600));
   --switch-icon-diameter: var(--sds-size-space-400);
@@ -35,9 +35,9 @@
 }
 
 .switch-field[data-selected] .switch {
-  --switch-background: var(--sds-color-background-brand-default);
+  --switch-background: var(--sds-color-background-accent-default);
   --switch-border: var(--switch-background);
-  --switch-icon: var(--sds-color-icon-brand-on-brand);
+  --switch-icon: var(--sds-color-icon-accent-on-accent);
   --switch-icon-x: calc(
     var(--switch-width) - var(--switch-padding) - var(--switch-icon-diameter)
   );
@@ -56,8 +56,8 @@
 }
 
 .switch-field {
-  --switch-field-label-color: var(--sds-color-text-default-default);
-  --switch-field-description-color: var(--sds-color-text-default-secondary);
+  --switch-field-label-color: var(--sds-color-text-neutral-default);
+  --switch-field-description-color: var(--sds-color-text-neutral-secondary);
 
   align-items: center;
   column-gap: var(--sds-size-space-300);
