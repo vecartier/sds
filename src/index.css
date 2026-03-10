@@ -3,9 +3,46 @@
 @import url("./theme.css");
 @import url("./icons.css");
 
+/* Deezer Product font family */
+@font-face {
+  font-family: "DeezerProduct";
+  src: url("/fonts/DeezerProduct-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DeezerProduct";
+  src: url("/fonts/DeezerProduct-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DeezerProduct";
+  src: url("/fonts/DeezerProduct-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DeezerProduct";
+  src: url("/fonts/DeezerProduct-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DeezerProduct";
+  src: url("/fonts/DeezerProduct-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --global-focus-ring-size: var(--sds-size-stroke-focus-ring);
-  --global-focus-ring-color: rgb(0, 106, 255);
+  --global-focus-ring-color: #AD47FF;
   --global-line-height-paragraph: 1.4;
   --global-stack-top: 999;
   --global-stack-focus: 999;
@@ -26,7 +63,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --global-focus-ring-color: rgb(0, 106, 255);
+    --global-focus-ring-color: #AD47FF;
   }
 }
 
