@@ -887,6 +887,7 @@
   --sds-font-body-code: normal var(--sds-typography-code-font-weight) var(--sds-typography-code-size-base) var(--sds-typography-code-font-family);
   --sds-font-single-line-body-small-strong: normal var(--sds-typography-body-font-weight-strong) var(--sds-typography-body-size-small) var(--sds-typography-body-font-family);
   --sds-font-utilities-component-notes-regular: normal var(--sds-typography-weight-regular) var(--sds-typography-scale-03) var(--sds-typography-family-mono);
+  --sds-font-input: normal var(--sds-typography-body-font-weight-regular) var(--sds-typography-body-size-medium) var(--sds-typography-body-font-family);
   --sds-font-utilities-component-notes-bold: normal var(--sds-typography-weight-bold) var(--sds-typography-scale-03) var(--sds-typography-family-mono);
   --sds-effects-shadows-drop-shadow-300: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-200);
   --sds-effects-shadows-drop-shadow-200: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-200);

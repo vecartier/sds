@@ -10,6 +10,9 @@
   box-sizing: border-box;
   color: var(--color);
   cursor: pointer;
+  transition: background-color var(--global-motion-duration-fast) var(--global-motion-easing-default),
+    color var(--global-motion-duration-fast) var(--global-motion-easing-default),
+    border-color var(--global-motion-duration-fast) var(--global-motion-easing-default);
   outline: none;
   position: relative;
 

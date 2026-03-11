@@ -13,6 +13,8 @@
   height: var(--sds-size-space-600);
   padding: var(--switch-padding);
   position: relative;
+  transition: background var(--global-motion-duration-normal) var(--global-motion-easing-default),
+    box-shadow var(--global-motion-duration-normal) var(--global-motion-easing-default);
   width: var(--switch-width);
 
   > .switch-icon {
@@ -23,6 +25,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%) translateX(var(--switch-icon-x));
+    transition: transform var(--global-motion-duration-normal) var(--global-motion-easing-default),
+      background var(--global-motion-duration-normal) var(--global-motion-easing-default);
     height: var(--switch-icon-diameter);
     width: var(--switch-icon-diameter);
   }

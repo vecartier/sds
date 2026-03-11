@@ -19,6 +19,7 @@
     var(--sds-size-space-400);
   position: relative;
   justify-content: space-between;
+  transition: box-shadow var(--global-motion-duration-fast) var(--global-motion-easing-default);
   width: 100%;
 
   > .icon {

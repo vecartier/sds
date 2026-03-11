@@ -54,6 +54,8 @@
 
   padding: var(--sds-size-space-300) var(--sds-size-space-400);
   row-gap: var(--sds-size-space-100);
+  transition: background-color var(--global-motion-duration-fast) var(--global-motion-easing-default),
+    color var(--global-motion-duration-fast) var(--global-motion-easing-default);
   width: 100%;
 
   &[data-focused] {

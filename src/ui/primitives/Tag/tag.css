@@ -140,27 +140,6 @@
     }
   }
 }
-.tag-scheme-brand {
-  --tag-color: var(--sds-color-text-accent-on-accent);
-  --tag-icon: var(--sds-color-icon-accent-on-accent);
-  --tag-background-color: var(--sds-color-background-accent-default);
-
-  &[data-hovered],
-  &:has(.tag-remove-button[data-hovered]) {
-    --tag-background-color: var(--sds-color-background-accent-hovered);
-  }
-
-  &.tag-variant-secondary {
-    --tag-color: var(--sds-color-text-accent-on-accent-secondary);
-    --tag-icon: var(--sds-color-icon-accent-on-accent-secondary);
-    --tag-background-color: var(--sds-color-background-accent-secondary);
-
-    &[data-hovered],
-    &:has(.tag-remove-button[data-hovered]) {
-      --tag-background-color: var(--sds-color-background-accent-secondary-hovered);
-    }
-  }
-}
 .tag-scheme-neutral {
   --tag-color: var(--sds-color-text-neutral-default);
   --tag-icon: var(--sds-color-icon-neutral-default);

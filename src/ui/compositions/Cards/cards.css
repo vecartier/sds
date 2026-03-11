@@ -5,6 +5,7 @@
   gap: var(--sds-size-space-600);
   display: flex;
   position: relative;
+  transition: background var(--global-motion-duration-fast) var(--global-motion-easing-default);
 
   &.card-direction-vertical {
     flex-direction: column;

@@ -96,12 +96,12 @@
 
   &:not(.text-link-list) {
     color: var(--sds-color-text-neutral-secondary);
-    padding-left: 1rem;
+    padding-left: var(--sds-size-space-400);
   }
 }
 
 .text-list-item {
-  font: var(--sds-font-body);
+  font: var(--sds-font-body-base);
 }
 
 .text-price {
