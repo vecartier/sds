@@ -1,5 +1,5 @@
 .button {
-  --border-radius: var(--sds-size-radius-200);
+  --border-radius: var(--sds-size-radius-300);
   align-items: center;
   box-shadow: inset 0 0 0 var(--sds-size-stroke-border)
     var(--button-border-color);
@@ -22,9 +22,10 @@
 }
 
 .button-size-small {
+  --border-radius: var(--sds-size-radius-200);
   --button-font: var(--sds-font-body-small);
-  --button-padding-x: var(--sds-size-space-200);
-  --button-padding-y: var(--sds-size-space-200);
+  --button-padding-x: var(--sds-size-space-400);
+  --button-padding-y: var(--sds-size-space-100);
 
   > .icon {
     --icon-diameter: var(--sds-typography-scale-02);
@@ -34,7 +35,7 @@
 .button-size-medium {
   --button-font: var(--sds-font-body-base);
 
-  --button-padding-x: var(--sds-size-space-300);
+  --button-padding-x: var(--sds-size-space-600);
   --button-padding-y: var(--sds-size-space-300);
 
   > .icon {

@@ -1,5 +1,5 @@
 .notification {
-  --border-radius: var(--sds-size-radius-200);
+  --border-radius: var(--sds-size-radius-300);
   align-items: center;
   background-color: var(--notification-background-color);
   border-radius: var(--border-radius);

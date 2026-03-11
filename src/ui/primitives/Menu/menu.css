@@ -4,7 +4,7 @@
   --menu-anchor-padding: var(--sds-size-space-300);
 
   background: var(--sds-color-background-neutral-default);
-  border-radius: var(--sds-size-radius-200);
+  border-radius: var(--sds-size-radius-300);
   box-shadow:
     inset 0 0 0 var(--sds-size-stroke-border)
       var(--sds-color-border-neutral-default),

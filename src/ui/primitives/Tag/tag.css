@@ -29,7 +29,7 @@
 }
 
 .tag {
-  --border-radius: var(--sds-size-radius-200);
+  --border-radius: var(--sds-size-radius-full);
   align-items: center;
   background-color: var(--tag-background-color);
   border-radius: var(--border-radius);

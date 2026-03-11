@@ -44,7 +44,7 @@
 }
 
 .dialog-type-card {
-  border-radius: var(--sds-size-radius-200);
+  border-radius: var(--sds-size-radius-400);
   border: var(--sds-size-stroke-border) solid
     var(--sds-color-border-neutral-default);
   max-width: var(--global-dialog-max-width);

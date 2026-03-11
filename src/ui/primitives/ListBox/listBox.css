@@ -1,7 +1,7 @@
 .list-box {
   --list-box-item-template-areas: "label" "description";
   background: var(--sds-color-background-neutral-default);
-  border-radius: var(--sds-size-radius-200);
+  border-radius: var(--sds-size-radius-300);
   box-shadow:
     0 0 0 var(--sds-size-stroke-border) var(--sds-color-border-neutral-default),
     var(--sds-effects-shadows-drop-shadow-400);
