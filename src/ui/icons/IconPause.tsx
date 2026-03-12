@@ -1,4 +1,4 @@
 import { IconProps, Icon } from "primitives";
 export const IconPause = (props: IconProps) => (
-  <Icon {...props}><path d="M6.66667 2.66663H4V13.3333H6.66667V2.66663Z" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M12 2.66663H9.33333V13.3333H12V2.66663Z" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></Icon>
+  <Icon {...props} viewBox="120 16 24 24"><path d="M124.75 38C124.27 38 123.85 37.66 123.77 37.18H123.76C123.34 34.76 123.02 31.86 122.99 28.53V28.07C122.99 24.49 123.34 21.39 123.79 18.82C123.87 18.34 124.29 18 124.77 18H130.99V38H124.75ZM128.86 20.14H125.76C125.35 22.72 125.15 25.38 125.15 28.06V28.5C125.17 30.99 125.36 33.45 125.73 35.85H128.86V20.14Z" fillRule="evenodd"/><path d="M141 28.53C140.97 31.85 140.65 34.75 140.23 37.18H140.22C140.14 37.66 139.72 38 139.24 38H133V18H139.22C139.7 18 140.12 18.34 140.2 18.82C140.65 21.39 141 24.49 141 28.07V28.53ZM138.28 35.86C138.64 33.46 138.84 30.99 138.86 28.51L138.87 28.5V28.06C138.87 25.39 138.66 22.73 138.26 20.14H135.15V35.86H138.28Z" fillRule="evenodd"/></Icon>
 );

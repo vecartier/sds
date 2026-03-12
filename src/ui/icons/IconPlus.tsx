@@ -1,4 +1,4 @@
 import { IconProps, Icon } from "primitives";
 export const IconPlus = (props: IconProps) => (
-  <Icon {...props}><path d="M7.99992 3.33325V12.6666M3.33325 7.99992H12.6666" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></Icon>
+  <Icon {...props} viewBox="48 16 24 24"><path d="M61 18H59V27H50V29H59V38H61V29H70V27H61V18Z"/></Icon>
 );

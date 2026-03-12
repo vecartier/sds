@@ -1,4 +1,4 @@
 import { IconProps, Icon } from "primitives";
 export const IconClock = (props: IconProps) => (
-  <Icon {...props}><g clipPath="url(#clip0_68_15665)"><path d="M8.00004 4.00004V8.00004L10.6667 9.33337M14.6667 8.00004C14.6667 11.6819 11.6819 14.6667 8.00004 14.6667C4.31814 14.6667 1.33337 11.6819 1.33337 8.00004C1.33337 4.31814 4.31814 1.33337 8.00004 1.33337C11.6819 1.33337 14.6667 4.31814 14.6667 8.00004Z" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></g><defs><clipPath id="clip0_68_15665"><rect width="16" height="16" fill="white"/></clipPath></defs></Icon>
+  <Icon {...props} viewBox="48 16 24 24"><path d="M59 22V29.4142L63.2929 33.7071L64.7071 32.2929L61 28.5858V22H59Z"/><path d="M49 28C49 20.9359 52.9359 17 60 17C67.064 17 71 20.9359 71 28C71 35.064 67.064 39 60 39C52.9359 39 49 35.064 49 28ZM51 28C51 33.9719 54.028 37 60 37C65.972 37 69 33.9719 69 28C69 22.028 65.972 19 60 19C54.028 19 51 22.028 51 28Z" fillRule="evenodd"/></Icon>
 );

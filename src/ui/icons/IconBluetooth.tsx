@@ -1,4 +1,4 @@
 import { IconProps, Icon } from "primitives";
 export const IconBluetooth = (props: IconProps) => (
-  <Icon {...props}><g clipPath="url(#clip0_68_15615)"><path d="M4.33325 4.33341L11.6666 11.6667L7.99992 15.3334V0.666748L11.6666 4.33341L4.33325 11.6667" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></g><defs><clipPath id="clip0_68_15615"><rect width="16" height="16" fill="white"/></clipPath></defs></Icon>
+  <Icon {...props} viewBox="48 16 24 24"><path d="M59 38V30.4L54.4 35L53 33.6L58.6 28L53 22.4L54.4 21L59 25.6V18H59.1716C59.702 18 60.2107 18.2107 60.5858 18.5858L65.3464 23.3464C65.5417 23.5417 65.5417 23.8583 65.3464 24.0536L61.4 28L65.3464 31.9464C65.5417 32.1417 65.5417 32.4583 65.3464 32.6536L60.5858 37.4142C60.2107 37.7893 59.702 38 59.1716 38H59ZM61 25.6L62.9 23.7L61 21.85V25.6ZM61 34.15L62.9 32.3L61 30.4V34.15Z"/></Icon>
 );

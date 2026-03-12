@@ -1,4 +1,4 @@
 import { IconProps, Icon } from "primitives";
 export const IconX = (props: IconProps) => (
-  <Icon {...props}><path d="M12 4L4 12M4 4L12 12" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></Icon>
+  <Icon {...props} viewBox="48 16 24 24"><path d="M62.093 26.2702L70.283 16.75H68.3422L61.2308 25.0163L55.551 16.75H49L57.589 29.2501L49 39.2334H50.9409L58.4507 30.504L64.449 39.2334H71L62.0925 26.2702H62.093ZM59.4347 29.3602L58.5644 28.1155L51.6402 18.2111H54.6213L60.2092 26.2042L61.0795 27.4489L68.3431 37.8388H65.3621L59.4347 29.3607V29.3602Z"/></Icon>
 );

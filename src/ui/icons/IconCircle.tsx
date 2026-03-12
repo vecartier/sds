@@ -1,4 +1,4 @@
 import { IconProps, Icon } from "primitives";
 export const IconCircle = (props: IconProps) => (
-  <Icon {...props}><g clipPath="url(#clip0_68_15661)"><path d="M7.99998 14.6667C11.6819 14.6667 14.6666 11.6819 14.6666 8.00004C14.6666 4.31814 11.6819 1.33337 7.99998 1.33337C4.31808 1.33337 1.33331 4.31814 1.33331 8.00004C1.33331 11.6819 4.31808 14.6667 7.99998 14.6667Z" stroke="var(--svg-stroke-color)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></g><defs><clipPath id="clip0_68_15661"><rect width="16" height="16" fill="white"/></clipPath></defs></Icon>
+  <Icon {...props} viewBox="48 16 24 24"><path d="M64 20.6667C59.2906 20.6667 56.6667 23.2907 56.6667 28.0001C56.6667 32.7094 59.2906 35.3334 64 35.3334C68.7093 35.3334 71.3333 32.7094 71.3333 28.0001C71.3333 23.2907 68.7093 20.6667 64 20.6667ZM64 34.0001C60.0187 34.0001 58 31.9814 58 28.0001C58 24.0188 60.0187 22.0001 64 22.0001C67.9813 22.0001 70 24.0188 70 28.0001C70 31.9814 67.9813 34.0001 64 34.0001Z" fillRule="evenodd"/></Icon>
 );
