@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconAirplay, IconCheck } from "icons";
+import { IconAirPlay, IconCheck } from "icons";
 import { Flex } from "layout";
 import {
   Label,
@@ -109,7 +109,7 @@ export const StoryTagToggleGroup: StoryObj<typeof TagToggleGroup> = {
           <TagToggle id="default" iconStart={<IconCheck />}>
             Default
           </TagToggle>
-          <TagToggle iconStart={<IconAirplay />}>Hello</TagToggle>
+          <TagToggle iconStart={<IconAirPlay />}>Hello</TagToggle>
           <TagToggle>Love</TagToggle>
           <TagToggle>This</TagToggle>
           <TagToggle>Story</TagToggle>

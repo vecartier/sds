@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { IconX } from "icons";
+import { IconCross } from "icons";
 import {
   Button,
   ButtonProps,
@@ -38,7 +38,7 @@ export const DialogClose = ({ onPress }: DialogCloseProps) => (
     variant="subtle"
     size="small"
   >
-    <IconX />
+    <IconCross />
   </IconButton>
 );
 

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconActivity, IconArrowLeft } from "icons";
+import { IconWaveform, IconArrowLeft } from "icons";
 import { Button, ButtonDanger, ButtonGroup } from "primitives";
 
 const meta: Meta<typeof Button> = {
@@ -31,7 +31,7 @@ export const StoryButton: StoryObj<typeof Button> = {
     <Button {...props}>
       <IconArrowLeft />
       {children}
-      <IconActivity />
+      <IconWaveform />
     </Button>
   ),
 };
@@ -58,7 +58,7 @@ export const StoryButtonDanger: StoryObj<typeof ButtonDanger> = {
     <ButtonDanger {...props}>
       <IconArrowLeft />
       {children}
-      <IconActivity />
+      <IconWaveform />
     </ButtonDanger>
   ),
 };

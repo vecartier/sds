@@ -1,5 +1,5 @@
 import { useMediaQuery } from "hooks";
-import { IconInstagram, IconLinkedin, IconTwitter, IconYoutube } from "icons";
+import { IconInstagram, IconLink, IconX, IconYouTube } from "icons";
 import { Flex, FlexItem, Section, type SectionProps } from "layout";
 import {
   ButtonGroup,
@@ -146,7 +146,7 @@ export function SocialButtons() {
         aria-label="Twitter"
         href="https://www.twitter.com"
       >
-        <IconTwitter />
+        <IconX />
       </IconButton>
       <IconButton
         variant="subtle"
@@ -160,14 +160,14 @@ export function SocialButtons() {
         aria-label="YouTube"
         href="https://www.youtube.com"
       >
-        <IconYoutube />
+        <IconYouTube />
       </IconButton>
       <IconButton
         variant="subtle"
         aria-label="LinkedIn"
         href="https://www.linkedin.com"
       >
-        <IconLinkedin />
+        <IconLink />
       </IconButton>
     </ButtonGroup>
   );

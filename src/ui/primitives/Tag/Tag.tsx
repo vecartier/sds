@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { IconX } from "icons";
+import { IconCross } from "icons";
 import React, { ReactNode } from "react";
 import {
   Button as RACButton,
@@ -44,7 +44,7 @@ export function Tag({
       {children}{" "}
       {onRemove && (
         <RACButton className="tag-remove-button" onPress={onRemove}>
-          <IconX size="16" />
+          <IconCross size="16" />
         </RACButton>
       )}
     </span>

@@ -38,7 +38,7 @@ export function AccordionItem({
             aria-label="accordion item indicator"
             className="accordion-item-indicator"
           >
-            <IconChevronDown size="20" />
+            <IconChevronDown size="24" />
           </span>
         </Button>
       </Heading>

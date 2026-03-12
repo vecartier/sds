@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconMenu } from "icons";
+import { IconLinesHorizontal } from "icons";
 import {
   MenuButton,
   MenuDescription,
@@ -23,7 +23,7 @@ export const StoryMenu: Story = {
   args: { placement: "bottom left" },
   render: (args) => {
     return (
-      <MenuButton {...args} label="Open menu" icon={<IconMenu />}>
+      <MenuButton {...args} label="Open menu" icon={<IconLinesHorizontal />}>
         <MenuItem>New…</MenuItem>
         <MenuItem isDisabled>Open…</MenuItem>
         <MenuSeparator />

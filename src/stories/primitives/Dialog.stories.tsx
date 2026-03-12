@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconMenu } from "icons";
+import { IconLinesHorizontal } from "icons";
 import {
   Button,
   ButtonGroup,
@@ -34,7 +34,7 @@ export const StoryDialog: Story = {
     <DialogButton
       {...args}
       variant="primary"
-      icon={<IconMenu />}
+      icon={<IconLinesHorizontal />}
       label="Open Dialog"
     >
       {({ close }) => (

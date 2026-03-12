@@ -8,11 +8,11 @@ import {
   TestimonialCard,
 } from "compositions";
 import {
-  IconActivity,
+  IconWaveform,
   IconClock,
-  IconCode,
+  IconEmbed,
   IconCompass,
-  IconSmile,
+  IconHappy,
 } from "icons";
 import { placeholder } from "images";
 import { Flex } from "layout";
@@ -58,7 +58,7 @@ export const StoryCard: StoryObj<
       {...args}
       asset={
         _asset === "icon" ? (
-          <IconActivity size="32" />
+          <IconWaveform size="32" />
         ) : _asset === "image" ? (
           <Image
             alt="A nice image"
@@ -231,22 +231,22 @@ export const StoryStatsCard: StoryObj<typeof StatsCard> = {
       direction="row"
     >
       <StatsCard
-        icon={<IconClock size="40" />}
+        icon={<IconClock size="32" />}
         stat="400"
         description="SDS Hours"
       />
       <StatsCard
-        icon={<IconCode size="40" />}
+        icon={<IconEmbed size="32" />}
         stat="15.3k"
         description="Lines of TypeScript"
       />
       <StatsCard
-        icon={<IconSmile size="40" />}
+        icon={<IconHappy size="32" />}
         stat="8M"
         description="Smiles"
       />
       <StatsCard
-        icon={<IconCompass size="40" />}
+        icon={<IconCompass size="32" />}
         stat="120.4k"
         description="Directions"
       />

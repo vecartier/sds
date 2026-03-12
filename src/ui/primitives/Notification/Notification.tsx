@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { IconX } from "icons";
+import { IconCross } from "icons";
 import { DestructiveIconButton, IconButton } from "primitives";
 import { ReactNode } from "react";
 import "./notification.css";
@@ -36,7 +36,7 @@ export function Notification({
             variant="danger-subtle"
             aria-label="Dismiss notification"
           >
-            <IconX />
+            <IconCross />
           </DestructiveIconButton>
         ) : (
           <IconButton
@@ -44,7 +44,7 @@ export function Notification({
             variant="subtle"
             aria-label="Dismiss notification"
           >
-            <IconX />
+            <IconCross />
           </IconButton>
         ))}
     </div>

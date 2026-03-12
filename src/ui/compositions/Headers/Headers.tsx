@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { useAuth } from "data";
 import { useMediaQuery } from "hooks";
-import { IconChevronDown, IconMenu, IconX } from "icons";
+import { IconChevronDown, IconLinesHorizontal, IconCross } from "icons";
 import { Flex, FlexItem, Section, type SectionProps } from "layout";
 import {
   Avatar,
@@ -96,7 +96,7 @@ export function HeaderAuth() {
               aria-label="Toggle navigation menu"
               onPress={() => setOpen(true)}
             >
-              <IconMenu />
+              <IconLinesHorizontal />
             </IconButton>
             <DialogModal isOpen={open}>
               <Dialog className={clsx("navigation-dialog")}>
@@ -106,7 +106,7 @@ export function HeaderAuth() {
                   aria-label="Close navigation menu"
                   onPress={() => setOpen(false)}
                 >
-                  <IconX />
+                  <IconCross />
                 </IconButton>
                 <Flex
                   direction="column"

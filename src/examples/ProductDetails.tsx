@@ -1,5 +1,5 @@
 import { useMediaQuery } from "hooks";
-import { IconShoppingBag } from "icons";
+import { IconBasket } from "icons";
 import { Flex, FlexItem, Section } from "layout";
 import {
   Accordion,
@@ -81,7 +81,7 @@ export function ProductDetails() {
                 </FlexItem>
                 <Button onPress={() => {}} variant="primary">
                   Add
-                  <IconShoppingBag />
+                  <IconBasket />
                 </Button>
               </Flex>
             </FlexItem>

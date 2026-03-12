@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconInfo } from "icons";
+import { IconInformation } from "icons";
 import {
   Button,
   ButtonDanger,
@@ -29,7 +29,7 @@ export const StoryNotification: StoryObj<
   render: ({ "[type]": _type, ...args }) => {
     const variant = _type === "message" ? "message" : "alert";
     return (
-      <Notification {...args} variant={variant} icon={<IconInfo size="20" />}>
+      <Notification {...args} variant={variant} icon={<IconInformation size="24" />}>
         <TextStrong>Notification Title</TextStrong>
         <Text>Hello there! This is a message</Text>
         {_type === "message" ? (

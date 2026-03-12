@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import { IconSearch, IconX } from "icons";
+import { IconMagnifyingGlass, IconCross } from "icons";
 import { IconButton, Input, Label, ListBox, ListBoxItem } from "primitives";
 import React, { useRef, useState } from "react";
 import {
@@ -54,7 +54,7 @@ export const Search = React.forwardRef(function Search(
             size="small"
             variant="subtle"
           >
-            <IconX />
+            <IconCross />
           </IconButton>
         ) : (
           <IconButton
@@ -63,7 +63,7 @@ export const Search = React.forwardRef(function Search(
             size="small"
             variant="subtle"
           >
-            <IconSearch />
+            <IconMagnifyingGlass />
           </IconButton>
         )}
       </span>
