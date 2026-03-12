@@ -12,7 +12,7 @@
   gap: var(--sds-size-space-200);
   justify-content: center;
   line-height: 1;
-  padding: var(--button-padding-y) var(--button-padding-x);
+  padding: var(--button-padding);
   position: relative;
   transition: background var(--global-motion-duration-fast) var(--global-motion-easing-default),
     box-shadow var(--global-motion-duration-fast) var(--global-motion-easing-default),
@@ -26,20 +26,17 @@
 
 .button-size-small {
   --border-radius: var(--sds-size-radius-200);
-  --button-font: var(--sds-font-body-small);
-  --button-padding-x: var(--sds-size-space-400);
-  --button-padding-y: var(--sds-size-space-100);
+  --button-font: var(--sds-font-body-base);
+  --button-padding: var(--sds-size-space-200);
 
   > .icon {
-    --icon-diameter: var(--sds-typography-scale-02);
+    --icon-diameter: var(--sds-typography-scale-03);
   }
 }
 
 .button-size-medium {
   --button-font: var(--sds-font-body-base);
-
-  --button-padding-x: var(--sds-size-space-600);
-  --button-padding-y: var(--sds-size-space-300);
+  --button-padding: var(--sds-size-space-300);
 
   > .icon {
     --icon-diameter: var(--sds-typography-scale-03);
@@ -72,23 +69,21 @@
   }
 }
 .button-variant-neutral {
-  --button-background-color: var(--sds-color-background-neutral-secondary);
-  --button-border-color: var(--sds-color-border-neutral-default);
+  --button-background-color: var(--sds-color-background-neutral-tertiary);
+  --button-border-color: var(--sds-color-border-neutral-secondary);
   --button-color: var(--sds-color-text-neutral-default);
   &[data-hovered]:not([data-disabled]) {
     --button-background-color: var(
-      --sds-color-background-neutral-secondary-hovered
+      --sds-color-background-neutral-tertiary-hovered
     );
   }
 }
 .button-variant-subtle {
   --button-background-color: transparent;
   --button-border-color: transparent;
-  --button-color: var(--sds-color-text-accent-default);
+  --button-color: var(--sds-color-text-neutral-default);
   &[data-hovered]:not([data-disabled]) {
-    --button-background-color: var(
-      --sds-color-background-neutral-hovered
-    );
+    --button-border-color: var(--sds-color-border-neutral-default);
   }
 }
 

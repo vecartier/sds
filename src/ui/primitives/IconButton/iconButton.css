@@ -1,3 +1,18 @@
 .icon-button {
   --border-radius: var(--sds-size-radius-full);
+
+  &.button-variant-neutral {
+    --button-background-color: var(--sds-color-background-neutral-secondary);
+    --button-border-color: var(--sds-color-border-neutral-default);
+    &[data-hovered]:not([data-disabled]) {
+      --button-background-color: var(
+        --sds-color-background-neutral-secondary-hovered
+      );
+    }
+  }
+
+  &.button-variant-subtle[data-hovered]:not([data-disabled]) {
+    --button-background-color: var(--sds-color-background-neutral-hovered);
+    --button-border-color: transparent;
+  }
 }

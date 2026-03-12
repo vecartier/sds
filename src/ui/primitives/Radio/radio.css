@@ -1,6 +1,6 @@
 .radio {
   --radio-background: var(--sds-color-background-neutral-default);
-  --radio-border: var(--sds-color-border-neutral-default);
+  --radio-border: var(--sds-color-border-accent-tertiary);
   --radio-icon: var(--sds-color-icon-accent-on-accent);
   --radio-border-radius: var(--sds-size-space-400);
   background: var(--radio-background);
@@ -54,9 +54,9 @@
   --radio-field-description-color: var(--sds-color-text-neutral-secondary);
 
   align-items: center;
-  column-gap: var(--sds-size-space-400);
+  column-gap: var(--sds-size-space-300);
   display: grid;
-  grid-template-columns: var(--sds-size-space-300) 1fr;
+  grid-template-columns: var(--sds-size-space-400) 1fr;
   row-gap: var(--sds-size-space-100);
   width: 100%;
 
