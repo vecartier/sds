@@ -1,4 +1,4 @@
-import { figma } from "@figma/code-connect";
+import figma from "@figma/code-connect";
 import { Navigation, NavigationButton, NavigationPill } from "primitives";
 
 figma.connect(Navigation, "<FIGMA_NAVIGATION_NAVIGATION_PILL_LIST>", {
